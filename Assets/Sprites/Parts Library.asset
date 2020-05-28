@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: Parts Library
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Legs
+    m_Hash: 1563094196
+    m_CategoryList:
+    - m_Name: leg_A
+      m_Hash: -411531432
+      m_Sprite: {fileID: 7316083556470381458, guid: db7d66893e117544ab1c8989af7137eb, type: 3}
+    - m_Name: leg_B
+      m_Hash: 2121389794
+      m_Sprite: {fileID: 8738318017369882242, guid: 4eebfa7e83f91f94f9358b58962553d4, type: 3}
+  - m_Name: Eyes
+    m_Hash: 120101800
+    m_CategoryList:
+    - m_Name: eyes_A
+      m_Hash: 2072927313
+      m_Sprite: {fileID: -4040918456968380419, guid: 4acc7b850d9e16d4da0c73c898992f88, type: 3}
+    - m_Name: eyes_B
+      m_Hash: -494465557
+      m_Sprite: {fileID: 5002411549771037600, guid: 4acc7b850d9e16d4da0c73c898992f88, type: 3}
+    - m_Name: eyes_C
+      m_Hash: -1786757763
+      m_Sprite: {fileID: 817071845919079864, guid: 4acc7b850d9e16d4da0c73c898992f88, type: 3}

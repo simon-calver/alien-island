@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Critter Atlas 0
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+    totalSpriteSurfaceArea: 310523
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 6404978645510034922, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: 6066729712581208408, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: 4296853748572360373, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: 4492683850943273668, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: -3758046053756099474, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: -2852409949847254350, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: 6181256421501906165, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: -481589895700094168, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: -5035057879057600514, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: 1565053460764095489, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: 2021786806680457484, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: -638440215134470843, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: 5729027831087331962, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: -8972185762710291287, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: 9100927542617577647, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: 979667031023404898, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: 7581288275706617243, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: 911462220858686414, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: -1206060765779812139, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  - {fileID: 3143082940879189715, guid: 66c6479359d08ee46966711ba570fd7e, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - CritterTemplate_0_19
+  - CritterTemplate_0_18
+  - CritterTemplate_0_15
+  - CritterTemplate_0_14
+  - CritterTemplate_0_17
+  - CritterTemplate_0_16
+  - CritterTemplate_0_11
+  - CritterTemplate_0_10
+  - CritterTemplate_0_13
+  - CritterTemplate_0_12
+  - CritterTemplate_0_8
+  - CritterTemplate_0_9
+  - CritterTemplate_0_6
+  - CritterTemplate_0_7
+  - CritterTemplate_0_4
+  - CritterTemplate_0_5
+  - CritterTemplate_0_2
+  - CritterTemplate_0_3
+  - CritterTemplate_0_0
+  - CritterTemplate_0_1
+  m_Tag: Critter Atlas 0
+  m_IsVariant: 0

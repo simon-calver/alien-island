@@ -1,0 +1,1450 @@
+fileFormatVersion: 2
+guid: 059f3a0eec5c574408bf361db69988bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8076046041362954224
+    second: SandTiles_0
+  - first:
+      213: 3079755848125757503
+    second: SandTiles_1
+  - first:
+      213: -2489249372091665714
+    second: SandTiles_2
+  - first:
+      213: 6539772155659128081
+    second: SandTiles_3
+  - first:
+      213: -4343143764011819993
+    second: SandTiles_4
+  - first:
+      213: -4420619078743114788
+    second: SandTiles_5
+  - first:
+      213: 2069858874359712447
+    second: SandTiles_6
+  - first:
+      213: 1681076573285221336
+    second: SandTiles_7
+  - first:
+      213: 6075185142982598165
+    second: SandTiles_8
+  - first:
+      213: 7638885035031487623
+    second: SandTiles_9
+  - first:
+      213: -1416364818958263791
+    second: SandTiles_10
+  - first:
+      213: -7006903307890223097
+    second: SandTiles_11
+  - first:
+      213: -2838126561513368096
+    second: SandTiles_12
+  - first:
+      213: 2769395162231903895
+    second: SandTiles_13
+  - first:
+      213: 794738535383879034
+    second: SandTiles_14
+  - first:
+      213: 5834709078216337711
+    second: SandTiles_15
+  - first:
+      213: 971662377930020784
+    second: SandTiles_16
+  - first:
+      213: 5624872856318836905
+    second: SandTiles_17
+  - first:
+      213: -8176087047119319003
+    second: SandTiles_18
+  - first:
+      213: 8040724207119527582
+    second: SandTiles_19
+  - first:
+      213: -2733422200306314695
+    second: SandTiles_20
+  - first:
+      213: -7842134470692234848
+    second: SandTiles_21
+  - first:
+      213: -5992596974751437724
+    second: SandTiles_22
+  - first:
+      213: 3232903646532065540
+    second: SandTiles_23
+  - first:
+      213: 2903934888188025054
+    second: SandTiles_24
+  - first:
+      213: -4902104626667591617
+    second: SandTiles_25
+  - first:
+      213: -6684792762606536115
+    second: SandTiles_26
+  - first:
+      213: 747885766974166354
+    second: SandTiles_27
+  - first:
+      213: -2650075811433778215
+    second: SandTiles_28
+  - first:
+      213: -8972115881491887620
+    second: SandTiles_29
+  - first:
+      213: -7601547804373707802
+    second: SandTiles_30
+  - first:
+      213: 5735061157987276829
+    second: SandTiles_31
+  - first:
+      213: -259915037037959196
+    second: SandTiles_32
+  - first:
+      213: -204446645114517113
+    second: SandTiles_33
+  - first:
+      213: -1362619588984229406
+    second: SandTiles_34
+  - first:
+      213: 8627588518643686574
+    second: SandTiles_35
+  - first:
+      213: 3274699613485967118
+    second: SandTiles_36
+  - first:
+      213: 7734964425158731435
+    second: SandTiles_37
+  - first:
+      213: -5202005004039713070
+    second: SandTiles_38
+  - first:
+      213: 512040751346380547
+    second: SandTiles_39
+  - first:
+      213: -6207678171957364638
+    second: SandTiles_40
+  - first:
+      213: 4438493848239519408
+    second: SandTiles_41
+  - first:
+      213: -2338978016615119068
+    second: SandTiles_42
+  - first:
+      213: -8833251095311258095
+    second: SandTiles_43
+  - first:
+      213: -1939833667313361304
+    second: SandTiles_44
+  - first:
+      213: -4309882662325115995
+    second: SandTiles_45
+  - first:
+      213: -3921856519034239359
+    second: SandTiles_46
+  - first:
+      213: -2452409184904548911
+    second: SandTiles_47
+  - first:
+      213: -6833896527775062113
+    second: SandTiles_48
+  - first:
+      213: 1352931965333718708
+    second: SandTiles_49
+  - first:
+      213: 98488367219201544
+    second: SandTiles_50
+  - first:
+      213: -7442263220145460983
+    second: SandTiles_51
+  - first:
+      213: 4347106206184676591
+    second: SandTiles_52
+  - first:
+      213: -7612160307800968869
+    second: SandTiles_53
+  - first:
+      213: -4289703799100763952
+    second: SandTiles_54
+  - first:
+      213: 8517772337863526104
+    second: SandTiles_55
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SandTiles_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7732df511e31070800000000000000
+      internalID: 8076046041362954224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38b77a60ad7dba20800000000000000
+      internalID: 3079755848125757503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_2
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2bc1b72e8647dd0800000000000000
+      internalID: -2489249372091665714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_3
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d8d0a5020f1ca50800000000000000
+      internalID: 6539772155659128081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_4
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c5f91f1cd0ab3c0800000000000000
+      internalID: -4343143764011819993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_5
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdbb33c8e5ec6a2c0800000000000000
+      internalID: -4420619078743114788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_6
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba866dfdad99bc10800000000000000
+      internalID: 2069858874359712447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_7
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d385e69c32645710800000000000000
+      internalID: 1681076573285221336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e553823b46f4450800000000000000
+      internalID: 6075185142982598165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_9
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78469118775c20a60800000000000000
+      internalID: 7638885035031487623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_10
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ad1ad83bf085ce0800000000000000
+      internalID: -1416364818958263791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_11
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70891bdc09a72ce90800000000000000
+      internalID: -7006903307890223097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_12
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e51569ede2fc98d0800000000000000
+      internalID: -2838126561513368096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_13
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79694872a3ede6620800000000000000
+      internalID: 2769395162231903895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_14
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7dcedabc7a770b00800000000000000
+      internalID: 794738535383879034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_15
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29e4d63efc09f050800000000000000
+      internalID: 5834709078216337711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_16
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7512ed8c90c7d00800000000000000
+      internalID: 971662377930020784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_17
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a00f9b9f009f0e40800000000000000
+      internalID: 5624872856318836905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_18
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 520d7cf3624b88e80800000000000000
+      internalID: -8176087047119319003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_19
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e6e369014669f60800000000000000
+      internalID: 8040724207119527582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_20
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9325399bdfee01ad0800000000000000
+      internalID: -2733422200306314695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_21
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a91b819f342b2390800000000000000
+      internalID: -7842134470692234848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_22
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c2cd53dc406dca0800000000000000
+      internalID: -5992596974751437724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_23
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409db94ecb49ddc20800000000000000
+      internalID: 3232903646532065540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_24
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed89f452569dc4820800000000000000
+      internalID: 2903934888188025054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_25
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38eda380d938fbb0800000000000000
+      internalID: -4902104626667591617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_26
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a3cb36668da33a0800000000000000
+      internalID: -6684792762606536115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_27
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255d0118426016a00800000000000000
+      internalID: 747885766974166354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_28
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d372a7171a093bd0800000000000000
+      internalID: -2650075811433778215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_29
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf909006424ac7380800000000000000
+      internalID: -8972115881491887620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_30
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e39721fb80e18690800000000000000
+      internalID: -7601547804373707802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_31
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18d8feccb7079f40800000000000000
+      internalID: 5735061157987276829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_32
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7e191a6a8946cf0800000000000000
+      internalID: -259915037037959196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_33
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789cd660cd8a92df0800000000000000
+      internalID: -204446645114517113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_34
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e13b9a04b0071de0800000000000000
+      internalID: -1362619588984229406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_35
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eacdef9fb0a5bb770800000000000000
+      internalID: 8627588518643686574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_36
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07a0f7c2f1127d20800000000000000
+      internalID: 3274699613485967118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_37
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6aedfb92d185b60800000000000000
+      internalID: 7734964425158731435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_38
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de886e9204cec7b0800000000000000
+      internalID: -5202005004039713070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_39
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f6686b9522b1700800000000000000
+      internalID: 512040751346380547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_40
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268f880a795e9d9a0800000000000000
+      internalID: -6207678171957364638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_41
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6b21a83a2b89d30800000000000000
+      internalID: 4438493848239519408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_42
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4274536e2e74a8fd0800000000000000
+      internalID: -2338978016615119068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_43
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e642cedecf96580800000000000000
+      internalID: -8833251095311258095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_44
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e9178ae835415e0800000000000000
+      internalID: -1939833667313361304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_45
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a32f78ad883034c0800000000000000
+      internalID: -4309882662325115995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_46
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1860aea5644c299c0800000000000000
+      internalID: -3921856519034239359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_47
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ddebd9f6da47fdd0800000000000000
+      internalID: -2452409184904548911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f972136c05f1921a0800000000000000
+      internalID: -6833896527775062113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_49
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6ccfe447496c210800000000000000
+      internalID: 1352931965333718708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_50
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806db9ee5a6ed5100800000000000000
+      internalID: 98488367219201544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_51
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90966463805c7b890800000000000000
+      internalID: -7442263220145460983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_52
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec98840016045c30800000000000000
+      internalID: 4347106206184676591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_53
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51f130f78c2c5690800000000000000
+      internalID: -7612160307800968869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_54
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d094fe5f19e774c0800000000000000
+      internalID: -4289703799100763952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandTiles_55
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6010cefc4353670800000000000000
+      internalID: 8517772337863526104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
