@@ -214,8 +214,8 @@ public class TerrainFunctions// : MonoBehaviour
 
 
         grid.unpassableTiles = new int[] { 1 };
-        grid.penaltyTiles = new int[] { 0, 4 };
-        grid.movementPenalty = new int[] { 100, 20 };
+        grid.penaltyTiles = new int[] { 0, 2, 3 };
+        grid.movementPenalty = new int[] { 100, 10, 20 };
         grid.bonusTiles = new int[] { 6, 7 };
         grid.movementBonus = new int[] { 1000, 1000 };
 

@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: 2219cebafc44bce4dac355fe9f1dbd2a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5435209892939362672
+    second: Room_0
+  - first:
+      213: 2911157161540883802
+    second: Room_1
+  - first:
+      213: 6117482753771828782
+    second: Room_2
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Room_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 242
+        width: 1567
+        height: 1861
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -783.5, y: 927.5174}
+        - {x: -783.5, y: -921.0156}
+        - {x: -316.02246, y: -924.1674}
+        - {x: 783.5, y: -924.1674}
+        - {x: 783.5, y: 925.94147}
+        - {x: 782.56934, y: 927.5174}
+      physicsShape:
+      - - {x: 783.5, y: 921.21375}
+        - {x: 780.99316, y: 924.36554}
+        - {x: -783.5, y: 925.5}
+        - {x: -783.5, y: -919.4397}
+        - {x: -249.5, y: -914.5}
+        - {x: -261.5, y: -657.5}
+        - {x: -518.5, y: -647.5}
+        - {x: -523.5, y: 664.5}
+        - {x: 522.5, y: 656.5}
+        - {x: 509.5, y: -640.5}
+        - {x: 244.5, y: -670.5}
+        - {x: 237.5, y: -927.5}
+        - {x: 780.99316, y: -922.5915}
+        - {x: 783.5, y: -919.4397}
+      tessellationDetail: 0.96
+      bones: []
+      spriteID: 071f654c99ebd6b40800000000000000
+      internalID: 5435209892939362672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Room_1
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 470
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -234.99313, y: 35}
+        - {x: -234.99313, y: -35}
+        - {x: 235, y: -35}
+        - {x: 235, y: 35}
+      physicsShape:
+      - - {x: -234.99313, y: 32.30599}
+        - {x: -234.99313, y: -35}
+        - {x: 235, y: -35}
+        - {x: 235, y: 32.30599}
+        - {x: 233.1299, y: 35}
+        - {x: -231.84079, y: 35}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a559af2b302866820800000000000000
+      internalID: 2911157161540883802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Room_2
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 542
+        width: 1178
+        height: 1773
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -585.3593, y: 886.5}
+        - {x: -586.9355, y: 886.5}
+        - {x: -586.9355, y: -868.4322}
+        - {x: -582.207, y: -873.1599}
+        - {x: 589, y: -873.1599}
+        - {x: 589, y: 886.5}
+      physicsShape:
+      - - {x: -583.78314, y: 886.5}
+        - {x: -583.78314, y: -871.584}
+        - {x: 589, y: -871.584}
+        - {x: 589, y: 886.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26f52a172aa5e450800000000000000
+      internalID: 6117482753771828782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
