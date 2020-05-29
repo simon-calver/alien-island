@@ -76,7 +76,7 @@ public class TerrainFunctions// : MonoBehaviour
             }
         }
 
-        //Debug.Log(terrainTypes.Length - no_of_biomes);
+        //Debug.Log((terrainTypes.Length- no_of_biomes));
 
         //Debug.Log(first_biome_ind);
         // The values 0 and 1 in the biome map are reserved for water and rock tiles
@@ -96,9 +96,18 @@ public class TerrainFunctions// : MonoBehaviour
                 }
                 else
                 {
-                    // The Perlin noise function may give values slightly outside the range (0,1) so the  values are clamped, also since some tiles don't correspond to 
+                    // The Perlin noise function may give values slightly outside the range [0, 1] so the  values are clamped
+                    float perlin_noise = Mathf.Clamp(Mathf.PerlinNoise(12.0f * x / width + offset.x, 12.0f * y / height + offset.y), 0f, 0.99f);
+
+                    // Convert this to ints in the range [first_biome_ind, first_biome_ind+no_of_biomes]
+                    PerlinVal = Mathf.FloorToInt((float)(no_of_biomes) * perlin_noise) + first_biome_ind;
+
+                    if (PerlinVal > 5) { Debug.Log(PerlinVal); }
+                    if (PerlinVal < 2) { Debug.Log(PerlinVal); }
+                    // DO THIS DIFFERENTLY
+                    //also since some tiles don't correspond to 
                     // biomes fewer values are required
-                    PerlinVal = (int)Mathf.Floor((float)(terrainTypes.Length - no_of_biomes - 1) * Mathf.Clamp(Mathf.PerlinNoise(12.0f * x / width + offset.x, 12.0f * y / height + offset.y), 0f, 0.99f)) + first_biome_ind;
+                    //PerlinVal = (int)Mathf.Floor(((float)(terrainTypes.Length - no_of_biomes) - 0.1f) * Mathf.Clamp(Mathf.PerlinNoise(12.0f * x / width + offset.x, 12.0f * y / height + offset.y), 0f, 0.99f)) + first_biome_ind;
 
                     // Near to the water the first biome is used as the beach
                     if (terrainMap[x, y] - water_bound <= 0.03f && terrainMap[x, y] >= water_bound)
@@ -109,8 +118,7 @@ public class TerrainFunctions// : MonoBehaviour
                 
                 // Set the value in the array 
                 biomeMap[x, y] = PerlinVal;
-                if (PerlinVal > 4) { Debug.Log(PerlinVal); }
-
+               
             }
         }
         return biomeMap;
@@ -208,7 +216,7 @@ public class TerrainFunctions// : MonoBehaviour
         grid.unpassableTiles = new int[] { 1 };
         grid.penaltyTiles = new int[] { 0, 4 };
         grid.movementPenalty = new int[] { 100, 20 };
-        grid.bonusTiles = new int[] { 5, 6 };
+        grid.bonusTiles = new int[] { 6, 7 };
         grid.movementBonus = new int[] { 1000, 1000 };
 
         grid.structures = structureMap;

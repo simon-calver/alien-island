@@ -34,7 +34,7 @@ public class TilemapFunctions : MonoBehaviour
 
                 }
 
-                if (map[x, y] == 4 & !structureMap[x, y])
+                if (map[x, y] == 3 & !structureMap[x, y])
                 {
                     detailTilemap[0].SetTile(new Vector3Int(x, y, 0), detailTiles[0]);
                 }
