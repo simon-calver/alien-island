@@ -180,7 +180,7 @@ public class MapGenerator : MonoBehaviour
                 {
                     worldPosition = new Vector3(x + 0.5f, y + 0.5f, -10);
 
-                    if (biomeMap[x, y] == 6)//terrainFunctions.structureMap[x, y])
+                    if (terrainFunctions.structureMap[x, y])//terrainFunctions.structureMap[x, y])
                     {
                         Gizmos.color = highlightColours[0];
                     }
