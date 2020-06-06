@@ -5,11 +5,10 @@ using UnityEngine;
 public class OpenDoor : MonoBehaviour
 {
     public float doorOpenAngle = 90.0f;
-    public float doorCloseAngle = 0.0f;
     public float doorAnimSpeed = 2.0f;
     public float openDist = 1.0f;
-    private Quaternion doorOpen = Quaternion.identity;
-    private Quaternion doorClose = Quaternion.identity;
+    private Quaternion doorOpen; 
+    private Quaternion doorClose;
     private Transform playerTrans = null;
     public bool doorStatus = false; //false is close, true is open
     private bool doorGo = false; //for Coroutine, when start only one
@@ -19,15 +18,15 @@ public class OpenDoor : MonoBehaviour
 
     void Start()
     {
-        doorStatus = false; //door is open, maybe change
-                            //Initialization your quaternions
-        doorOpen = Quaternion.Euler(0, 0, doorOpenAngle);
-        doorClose = Quaternion.Euler(0, 0, doorCloseAngle);
+        // Start with door closed
+        doorStatus = false;
+
+        // doorOpen is the initial door rotation and doorClosed has doorOpenAngle added to the z component
+        doorClose = Quaternion.Euler(this.transform.eulerAngles.x, this.transform.eulerAngles.y, this.transform.eulerAngles.z); 
+        doorOpen = Quaternion.Euler(this.transform.eulerAngles.x, this.transform.eulerAngles.y, this.transform.eulerAngles.z + doorOpenAngle);
+
         //Find only one time your player and get him reference
         playerTrans = GameObject.Find("Player").transform;
-
-        //audioSource = this.GetComponent<AudioSource>();
-
     }
 
     void Update()
