@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2959611898910441655}
   - component: {fileID: 3945079674408719324}
-  - component: {fileID: 1809524914}
+  - component: {fileID: 1809524913}
   m_Layer: 0
   m_Name: Flashlight 1
   m_TagString: Untagged
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1809524914
+--- !u!114 &1809524913
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

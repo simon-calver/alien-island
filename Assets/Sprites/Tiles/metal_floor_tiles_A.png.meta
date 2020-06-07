@@ -1,0 +1,1618 @@
+fileFormatVersion: 2
+guid: 0b235092dce5cf544868fad88d4a6b42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4283051530348248554
+    second: metal_floor_tiles_1_0
+  - first:
+      213: -3096983256412691596
+    second: metal_floor_tiles_1_1
+  - first:
+      213: 7251703024057472787
+    second: metal_floor_tiles_1_2
+  - first:
+      213: 4817753422764525032
+    second: metal_floor_tiles_1_3
+  - first:
+      213: -4744471387046212047
+    second: metal_floor_tiles_1_4
+  - first:
+      213: 3161091371791963062
+    second: metal_floor_tiles_1_5
+  - first:
+      213: -8417890440693118100
+    second: metal_floor_tiles_1_6
+  - first:
+      213: -7884553405035970460
+    second: metal_floor_tiles_1_7
+  - first:
+      213: -4671665188680475695
+    second: metal_floor_tiles_1_8
+  - first:
+      213: -8801594265259182187
+    second: metal_floor_tiles_1_9
+  - first:
+      213: 7482204187324651015
+    second: metal_floor_tiles_1_10
+  - first:
+      213: 7407304901729152796
+    second: metal_floor_tiles_1_11
+  - first:
+      213: 6927477879511299588
+    second: metal_floor_tiles_1_12
+  - first:
+      213: 1022513314807745515
+    second: metal_floor_tiles_1_13
+  - first:
+      213: -1354669515050162138
+    second: metal_floor_tiles_1_14
+  - first:
+      213: -6494991852928696795
+    second: metal_floor_tiles_1_15
+  - first:
+      213: -1797012890682340137
+    second: metal_floor_tiles_1_16
+  - first:
+      213: 2428621469604526921
+    second: metal_floor_tiles_1_17
+  - first:
+      213: -4091710556075401701
+    second: metal_floor_tiles_1_18
+  - first:
+      213: -1261236511666503848
+    second: metal_floor_tiles_1_19
+  - first:
+      213: 8169519865562489124
+    second: metal_floor_tiles_1_20
+  - first:
+      213: -6097445700001339206
+    second: metal_floor_tiles_1_21
+  - first:
+      213: -7474034167927726297
+    second: metal_floor_tiles_1_22
+  - first:
+      213: -599102282532291261
+    second: metal_floor_tiles_1_23
+  - first:
+      213: -7108978852366662837
+    second: metal_floor_tiles_1_24
+  - first:
+      213: -7902991006959111192
+    second: metal_floor_tiles_1_25
+  - first:
+      213: -3172349727785244602
+    second: metal_floor_tiles_1_26
+  - first:
+      213: 7422267069893929377
+    second: metal_floor_tiles_1_27
+  - first:
+      213: -982866755837053066
+    second: metal_floor_tiles_1_28
+  - first:
+      213: 460974540787545314
+    second: metal_floor_tiles_1_29
+  - first:
+      213: 7969203747126648938
+    second: metal_floor_tiles_1_30
+  - first:
+      213: 4068411577349279826
+    second: metal_floor_tiles_1_31
+  - first:
+      213: 4777914641366902191
+    second: metal_floor_tiles_1_32
+  - first:
+      213: -163600393683579706
+    second: metal_floor_tiles_1_33
+  - first:
+      213: -8206355599682603097
+    second: metal_floor_tiles_1_34
+  - first:
+      213: -4399235916628427726
+    second: metal_floor_tiles_1_35
+  - first:
+      213: -7107955463189903188
+    second: metal_floor_tiles_1_36
+  - first:
+      213: 8032060930674771212
+    second: metal_floor_tiles_1_37
+  - first:
+      213: -246020841751196049
+    second: metal_floor_tiles_1_38
+  - first:
+      213: -280586997141455064
+    second: metal_floor_tiles_1_39
+  - first:
+      213: -66456256684159827
+    second: metal_floor_tiles_1_40
+  - first:
+      213: 9013905418186268634
+    second: metal_floor_tiles_1_41
+  - first:
+      213: -2985591652905958680
+    second: metal_floor_tiles_1_42
+  - first:
+      213: 6333463235987241529
+    second: metal_floor_tiles_1_43
+  - first:
+      213: -903932828986130835
+    second: metal_floor_tiles_1_44
+  - first:
+      213: 4808602397257470784
+    second: metal_floor_tiles_1_45
+  - first:
+      213: 4212443067557552677
+    second: metal_floor_tiles_1_46
+  - first:
+      213: 4270689193866528874
+    second: metal_floor_tiles_1_47
+  - first:
+      213: 4883150454230781100
+    second: metal_floor_tiles_1_48
+  - first:
+      213: 4956164274399692343
+    second: metal_floor_tiles_1_49
+  - first:
+      213: -1000804101523606558
+    second: metal_floor_tiles_1_50
+  - first:
+      213: 4759171109871718909
+    second: metal_floor_tiles_1_51
+  - first:
+      213: 2119620982868403824
+    second: metal_floor_tiles_1_52
+  - first:
+      213: 8568148188389832796
+    second: metal_floor_tiles_1_53
+  - first:
+      213: -1064708184534256521
+    second: metal_floor_tiles_1_54
+  - first:
+      213: 2078085737964841387
+    second: metal_floor_tiles_1_55
+  - first:
+      213: 4484310828453182278
+    second: metal_floor_tiles_A_0
+  - first:
+      213: -7091298948683008230
+    second: metal_floor_tiles_A_1
+  - first:
+      213: -3665552661648307936
+    second: metal_floor_tiles_A_2
+  - first:
+      213: 7582928114261361487
+    second: metal_floor_tiles_A_3
+  - first:
+      213: -6084878298646128735
+    second: metal_floor_tiles_A_4
+  - first:
+      213: -5790050882658431488
+    second: metal_floor_tiles_A_5
+  - first:
+      213: 5932417214228133868
+    second: metal_floor_tiles_A_6
+  - first:
+      213: 1412260273657966861
+    second: metal_floor_tiles_A_7
+  - first:
+      213: -1538769849313386470
+    second: metal_floor_tiles_A_8
+  - first:
+      213: 4406421039440648727
+    second: metal_floor_tiles_A_9
+  - first:
+      213: -5500016211537516955
+    second: metal_floor_tiles_A_10
+  - first:
+      213: -5591015956451409160
+    second: metal_floor_tiles_A_11
+  - first:
+      213: 4792145529059699535
+    second: metal_floor_tiles_A_12
+  - first:
+      213: 7951398359607175846
+    second: metal_floor_tiles_A_13
+  - first:
+      213: -2435576536398158854
+    second: metal_floor_tiles_A_14
+  - first:
+      213: 5708386817592966325
+    second: metal_floor_tiles_A_15
+  - first:
+      213: -8782128418463118281
+    second: metal_floor_tiles_A_16
+  - first:
+      213: -6476436898416758902
+    second: metal_floor_tiles_A_17
+  - first:
+      213: 1291373569035894911
+    second: metal_floor_tiles_A_18
+  - first:
+      213: 437918113662764187
+    second: metal_floor_tiles_A_19
+  - first:
+      213: 6388152197279833228
+    second: metal_floor_tiles_A_20
+  - first:
+      213: -8838318848568246081
+    second: metal_floor_tiles_A_21
+  - first:
+      213: -9177963323792626972
+    second: metal_floor_tiles_A_22
+  - first:
+      213: 124632071098020703
+    second: metal_floor_tiles_A_23
+  - first:
+      213: 3500152003511750022
+    second: metal_floor_tiles_A_24
+  - first:
+      213: 9071677205229568466
+    second: metal_floor_tiles_A_25
+  - first:
+      213: -4011864803763971238
+    second: metal_floor_tiles_A_26
+  - first:
+      213: -4908951446109482490
+    second: metal_floor_tiles_A_27
+  - first:
+      213: -6852676831876588497
+    second: metal_floor_tiles_A_28
+  - first:
+      213: -1788707570082533571
+    second: metal_floor_tiles_A_29
+  - first:
+      213: 7232501921523151421
+    second: metal_floor_tiles_A_30
+  - first:
+      213: 7062933650500870970
+    second: metal_floor_tiles_A_31
+  - first:
+      213: -3154126167098366923
+    second: metal_floor_tiles_A_32
+  - first:
+      213: -1551892034595468269
+    second: metal_floor_tiles_A_33
+  - first:
+      213: 8618638785073224461
+    second: metal_floor_tiles_A_34
+  - first:
+      213: 1543596541505584913
+    second: metal_floor_tiles_A_35
+  - first:
+      213: 8429231963658127572
+    second: metal_floor_tiles_A_36
+  - first:
+      213: -1399224866549228453
+    second: metal_floor_tiles_A_37
+  - first:
+      213: -4344468050687746200
+    second: metal_floor_tiles_A_38
+  - first:
+      213: 5341013053210450634
+    second: metal_floor_tiles_A_39
+  - first:
+      213: 6209074851637252777
+    second: metal_floor_tiles_A_40
+  - first:
+      213: -7909532453938662907
+    second: metal_floor_tiles_A_41
+  - first:
+      213: -4476065203775729486
+    second: metal_floor_tiles_A_42
+  - first:
+      213: 4226387588017146128
+    second: metal_floor_tiles_A_43
+  - first:
+      213: 7295422174045001360
+    second: metal_floor_tiles_A_44
+  - first:
+      213: -5455840992217529953
+    second: metal_floor_tiles_A_45
+  - first:
+      213: 4192973947132371893
+    second: metal_floor_tiles_A_46
+  - first:
+      213: -8358110667435641982
+    second: metal_floor_tiles_A_47
+  - first:
+      213: 8210073387580180848
+    second: metal_floor_tiles_A_48
+  - first:
+      213: 7355370956295050888
+    second: metal_floor_tiles_A_49
+  - first:
+      213: -257285974584112233
+    second: metal_floor_tiles_A_50
+  - first:
+      213: 3346033049501174134
+    second: metal_floor_tiles_A_51
+  - first:
+      213: 3991790706254589111
+    second: metal_floor_tiles_A_52
+  - first:
+      213: -2560550095202841695
+    second: metal_floor_tiles_A_53
+  - first:
+      213: 4596432524438535416
+    second: metal_floor_tiles_A_54
+  - first:
+      213: 7539787002744306767
+    second: metal_floor_tiles_A_55
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64bb36880f87b3e30800000000000000
+      internalID: 4484310828453182278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17f5af6d25a69d90800000000000000
+      internalID: -7091298948683008230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_2
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02907f07647512dc0800000000000000
+      internalID: -3665552661648307936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_3
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f430fdf91f8fb3960800000000000000
+      internalID: 7582928114261361487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_4
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7d6bb2d6b2e8ba0800000000000000
+      internalID: -6084878298646128735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_5
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e05b3366b95afa0800000000000000
+      internalID: -5790050882658431488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_6
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7fa79660e245250800000000000000
+      internalID: 5932417214228133868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_7
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 1640
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0177c58c3b599310800000000000000
+      internalID: 1412260273657966861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10289c89f035aae0800000000000000
+      internalID: -1538769849313386470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_9
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71adaa2d690c62d30800000000000000
+      internalID: 4406421039440648727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_10
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566aa6c55640ca3b0800000000000000
+      internalID: -5500016211537516955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_11
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f24c2e2c98b862b0800000000000000
+      internalID: -5591015956451409160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_12
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b649308fe118240800000000000000
+      internalID: 4792145529059699535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_13
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa62040eaa095e60800000000000000
+      internalID: 7951398359607175846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_14
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af326bc5b08133ed0800000000000000
+      internalID: -2435576536398158854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_15
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 1368
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bcb627f093483f40800000000000000
+      internalID: 5708386817592966325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_16
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c84adabbc9f1680800000000000000
+      internalID: -8782128418463118281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_17
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8fe2ab54f21f16a0800000000000000
+      internalID: -6476436898416758902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_18
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7086b64b61ebe110800000000000000
+      internalID: 1291373569035894911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_19
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b940495443cc31600800000000000000
+      internalID: 437918113662764187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_20
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cdef9d39647a850800000000000000
+      internalID: 6388152197279833228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_21
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0437ba5dbf75580800000000000000
+      internalID: -8838318848568246081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_22
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eae6c3ebf251a080800000000000000
+      internalID: -9177963323792626972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_23
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 1096
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f533b655538cab100800000000000000
+      internalID: 124632071098020703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_24
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d803dd3b9039030800000000000000
+      internalID: 3500152003511750022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_25
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d187b6ba5215ed70800000000000000
+      internalID: 9071677205229568466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_26
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b91cc773ef258c0800000000000000
+      internalID: -4011864803763971238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_27
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60211032ba6efdbb0800000000000000
+      internalID: -4908951446109482490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_28
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c527b7ab666e0a0800000000000000
+      internalID: -6852676831876588497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_29
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fad2621fb3d27e0800000000000000
+      internalID: -1788707570082533571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_30
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32b7bd9d220f5460800000000000000
+      internalID: 7232501921523151421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_31
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 824
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33e14eebb4940260800000000000000
+      internalID: 7062933650500870970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_32
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534665956fa4a34d0800000000000000
+      internalID: -3154126167098366923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_33
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ccd24ba62967ae0800000000000000
+      internalID: -1551892034595468269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_34
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b91bfbf4e8b9770800000000000000
+      internalID: 8618638785073224461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_35
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f36fc40e4fb6510800000000000000
+      internalID: 1543596541505584913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_36
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8063b9fc5aaf470800000000000000
+      internalID: 8429231963658127572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_37
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c9074b564f49ce0800000000000000
+      internalID: -1399224866549228453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_38
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f19bc635955b3c0800000000000000
+      internalID: -4344468050687746200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_39
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 552
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca5551f2171f1a40800000000000000
+      internalID: 5341013053210450634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_40
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a256a33ea01b2650800000000000000
+      internalID: 6209074851637252777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_41
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502ff8fb322bb3290800000000000000
+      internalID: -7909532453938662907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_42
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b016719962d1e1c0800000000000000
+      internalID: -4476065203775729486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_43
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019c1e27e1527aa30800000000000000
+      internalID: 4226387588017146128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_44
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096d57280db8e3560800000000000000
+      internalID: 7295422174045001360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_45
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f910cdb1685f844b0800000000000000
+      internalID: -5455840992217529953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_46
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3ea4fe69f603a30800000000000000
+      internalID: 4192973947132371893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_47
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283781291a6020c80800000000000000
+      internalID: -8358110667435641982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079ca964f3a00f170800000000000000
+      internalID: 8210073387580180848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_49
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88611311ae6831660800000000000000
+      internalID: 7355370956295050888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_50
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b493fe4cfed6cf0800000000000000
+      internalID: -257285974584112233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_51
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6790c3a945f7f6e20800000000000000
+      internalID: 3346033049501174134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_52
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bca2087f70b56730800000000000000
+      internalID: 3991790706254589111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_53
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab87d93149177cd0800000000000000
+      internalID: -2560550095202841695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_54
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fcf53d270fc9cf30800000000000000
+      internalID: 4596432524438535416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metal_floor_tiles_A_55
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 8
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c7eacd454b2a860800000000000000
+      internalID: 7539787002744306767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

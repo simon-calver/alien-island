@@ -45,7 +45,30 @@ public class TilemapFunctions : MonoBehaviour
 
     }
 
-    public static void DrawRoadTilemap(int[,] map, Tilemap[] roadTilemap, TileBase[] roadTiles)//, Tilemap[] detailTilemap, TileBase[] detailTiles, bool[,] structureMap)
+    public static void DrawBridgeDetails(int[,] map, Tilemap detailTilemap, TileBase bridgeDetailTiles, int bridgeInd)//, Tilemap[] detailTilemap, TileBase[] detailTiles, bool[,] structureMap)
+    {
+        // Size of the grid
+        int x_bound = map.GetUpperBound(0);
+        int y_bound = map.GetUpperBound(1);
+
+        // The integers in map should correspond to what tile is to be drawn where
+        for (int x = 0; x < x_bound; x++)
+        {
+            for (int y = 0; y < y_bound; y++)
+            {
+                if (map[x, y] == bridgeInd)
+                {
+                    detailTilemap.SetTile(new Vector3Int(x, y, 0), bridgeDetailTiles);
+                }
+            }
+        }
+    }
+
+
+
+
+
+        public static void DrawRoadTilemap(int[,] map, Tilemap[] roadTilemap, TileBase[] roadTiles)//, Tilemap[] detailTilemap, TileBase[] detailTiles, bool[,] structureMap)
     {
         // Find how many tile types there are 
         int tileTypes = roadTiles.Length;

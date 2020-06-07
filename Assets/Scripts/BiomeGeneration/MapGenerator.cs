@@ -29,8 +29,8 @@ public class MapGenerator : MonoBehaviour
     public Tilemap[] detailTilemap = new Tilemap[2];
     public TileBase[] detailTiles = new TileBase[1];
 
-    public Tilemap[] roadTilemap = new Tilemap[1];
-    public TileBase[] roadTiles = new TileBase[1];
+    //public Tilemap[] roadTilemap = new Tilemap[1];
+    //public TileBase[] roadTiles = new TileBase[1];
 
     // The tiles with colliders are added to a seperate tilemap with different physics
     //public Tilemap[] colliderTilemap = new Tilemap[1];
@@ -119,6 +119,11 @@ public class MapGenerator : MonoBehaviour
         // Draw the biome tiles on to the tilemap
         TilemapFunctions.DrawBiomeTilemap(biomeMap, biomeTilemap, biomeTiles, detailTilemap, detailTiles, terrainFunctions.structureMap, tileTypes);
 
+        //TilemapFunctions.DrawBridgeDetails(biomeMap, detailTilemap[0], detailTiles[1], 7);
+
+        //    , biomeTilemap, biomeTiles, detailTiles, terrainFunctions.structureMap, tileTypes);
+        //int[,] map, Tilemap detailTilemap, TileBase bridgeDetailTiles, int bridgeInd
+
 
         //TilemapFunctions.DrawRoadTilemap(biomeMap, roadTilemap, roadTiles);//, detailTilemap, detailTiles, terrainFunctions.structureMap);
 
@@ -154,10 +159,10 @@ public class MapGenerator : MonoBehaviour
         }
 
 
-        for (int i = 0; i < detailTilemap.Length; i++)
-        {
-            roadTilemap[i].ClearAllTiles();
-        }
+        //for (int i = 0; i < detailTilemap.Length; i++)
+        //{
+        //    roadTilemap[i].ClearAllTiles();
+        //}
     }
 
     void OnDrawGizmosSelected()
