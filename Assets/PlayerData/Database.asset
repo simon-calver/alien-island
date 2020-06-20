@@ -15,5 +15,5 @@ MonoBehaviour:
   ItemObjects:
   - {fileID: 11400000, guid: c77bd0b54d2f50b43ab0f6ad041fdef3, type: 2}
   - {fileID: 11400000, guid: 0769ba77666a73943b78d56dcd68a81f, type: 2}
-  - {fileID: 11400000, guid: e4fefee81d163f941a0cb98c1d67c172, type: 2}
   - {fileID: 11400000, guid: 61ae48bc524eb274f94c6805bc449d9a, type: 2}
+  - {fileID: 11400000, guid: e4fefee81d163f941a0cb98c1d67c172, type: 2}

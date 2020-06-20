@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ac3412062a0c5488994ee1b1062d81, type: 3}
   m_Name: Map
   m_EditorClassIdentifier: 
-  uiDisplay: {fileID: 1720319261521994947, guid: 69a558b6da8366141bf40779f9e1bf85, type: 3}
+  uiDisplay: {fileID: 5508725064705088119, guid: 5a26f1525a7a42444b7969cd53d80bbb, type: 3}
   stackable: 0
-  type: 8
-  description: 
+  type: 1
+  description: 'Location '
   data:
     Name: 
-    Id: -1
+    Id: 2
     buffs: []
