@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public GameObject inventoryDisplay;
+
     public InventoryObject inventory;
     public InventoryObject equipment;
 
     public Attribute[] attributes;
 
+    private bool inventoryDisplayActive;
+
     private void Start()
     {
+        // Make sure the inventory is not displayed initially
+        inventoryDisplayActive = true;
+        DisplayInventory();
+
         for (int i = 0; i < attributes.Length; i++)
         {
             attributes[i].SetParent(this);
@@ -98,6 +106,40 @@ public class Player : MonoBehaviour
         {
             inventory.Load();
             equipment.Load();
+        }
+
+        // Open the inventory screen
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            DisplayInventory();
+        }
+    }
+
+    // Enable and disable the inventory screen, this also probably needs to pause the game
+    private void DisplayInventory()
+    {
+        
+        if (inventoryDisplayActive)
+        {
+            // Disable the game object
+            inventoryDisplay.SetActive(false);
+
+            // Update the boolean
+            inventoryDisplayActive = false;
+        }
+        else
+        {
+            // Enable the game object
+            inventoryDisplay.SetActive(true);
+
+            // Update all the slots to display the items
+            //for (int i = 0; i < inventory.GetSlots.Length; i++)
+            //{
+            //    inventory.GetSlots[i].UpdateSlot(newContainer.Slots[i].item, newContainer.Slots[i].amount);
+            //}
+
+            // Update the boolean
+            inventoryDisplayActive = true;
         }
     }
 

@@ -2,24 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// The item types what is enum?
 public enum ItemType
 {
-    Food,
-    Head,
-    Feet,
-    Torso,
-    weapon,
-    shield,
-    Shoes,
-    Tops,
+    Headgear,
     Equipment,
-    Default
+    Bodywear,
+    Legwear,
+    Footwear,
+    Consumable
+
+
+    //Food,
+    //Head,
+    //Feet,
+    //Torso,
+    //weapon,
+    //shield,
+    //Shoes,
+    //Tops,
+    //Equipment,
+    //Default
 }
 
 public enum Attributes
 {
     Stamina,
-    Speed
+    Speed, 
+    Strength
 }
 
 [CreateAssetMenu(fileName = "New Item", menuName = "Inventory System/Items/Item")]
