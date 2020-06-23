@@ -34,6 +34,9 @@ public abstract class UserInterface : MonoBehaviour
         textPopup.GetComponentInChildren<TextMeshProUGUI>().raycastTarget = false;
         textPopup.GetComponentInChildren<Image>().raycastTarget = false;
 
+        // Make the text box see-through
+        textPopup.GetComponentInChildren<TextMeshProUGUI>().text = "";
+        textPopup.GetComponentInChildren<Image>().color = new Color(0.1f, 0.1f, 0.1f, 0f);
     }
 
     private void OnSlotUpdate(InventorySlot _slot)

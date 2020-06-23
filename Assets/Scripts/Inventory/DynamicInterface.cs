@@ -31,6 +31,9 @@ public class DynamicInterface : UserInterface
 
             slotsOnInterface.Add(obj, inventory.GetSlots[i]);
         }
+
+        // Set the inventory display to be inactive
+        //this.parent.SetActive(false);
     }
 
     private Vector3 GetPosition(int i)

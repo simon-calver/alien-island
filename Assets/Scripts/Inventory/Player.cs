@@ -15,10 +15,6 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        // Make sure the inventory is not displayed initially
-        inventoryDisplayActive = true;
-        DisplayInventory();
-
         for (int i = 0; i < attributes.Length; i++)
         {
             attributes[i].SetParent(this);
@@ -28,6 +24,10 @@ public class Player : MonoBehaviour
             equipment.GetSlots[i].OnBeforeUpdate += OnBeforeSlotUpdate;
             equipment.GetSlots[i].OnAfterUpdate += OnAfterSlotUpdate;
         }
+
+        // Make sure the inventory is not displayed initially
+        inventoryDisplayActive = true;
+        DisplayInventory();
     }
 
     public void OnBeforeSlotUpdate(InventorySlot _slot)
@@ -118,7 +118,6 @@ public class Player : MonoBehaviour
     // Enable and disable the inventory screen, this also probably needs to pause the game
     private void DisplayInventory()
     {
-        
         if (inventoryDisplayActive)
         {
             // Disable the game object
@@ -132,14 +131,14 @@ public class Player : MonoBehaviour
             // Enable the game object
             inventoryDisplay.SetActive(true);
 
-            // Update all the slots to display the items
-            //for (int i = 0; i < inventory.GetSlots.Length; i++)
-            //{
-            //    inventory.GetSlots[i].UpdateSlot(newContainer.Slots[i].item, newContainer.Slots[i].amount);
-            //}
-
             // Update the boolean
-            inventoryDisplayActive = true;
+            inventoryDisplayActive = true; 
+        }
+
+        // Update all the slots to display the items
+        for (int i = 0; i < inventory.GetSlots.Length; i++)
+        {
+            inventory.GetSlots[i].UpdateSlot(inventory.GetSlots[i].item, inventory.GetSlots[i].amount);
         }
     }
 
