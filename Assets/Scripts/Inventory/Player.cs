@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    // Canvas gameobjects in the scene
     public GameObject inventoryDisplay;
+    public GameObject HUD;
 
     public InventoryObject inventory;
     public InventoryObject equipment;
@@ -12,6 +14,9 @@ public class Player : MonoBehaviour
     public Attribute[] attributes;
 
     private bool inventoryDisplayActive;
+
+    // Store nearest interactable game object in the vicinity of the player, these should all have triggers on them
+    private GameObject interactableObject;
 
     private void Start()
     {
@@ -82,17 +87,31 @@ public class Player : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        var item = other.GetComponent<GroundItem>();
-        if (item)
-        {
-            Item _item = new Item(item.item);
-            if(inventory.AddItem(_item, 1))
-            {
-                Destroy(other.gameObject);
-            }
-            //inventory.AddItem(new Item(item.item), 1);
-            
-        }
+        interactableObject = other.gameObject;
+        // 
+        //var item = other.GetComponent<GroundItem>();
+        //if (item)
+        //{
+        //    // Highlight the item
+        //    Debug.Log(other.transform.position);
+
+
+        //    Item _item = new Item(item.item);
+        //    if(inventory.AddItem(_item, 1))
+        //    {
+        //        Destroy(other.gameObject);
+        //    }
+
+
+
+        //    //inventory.AddItem(new Item(item.item), 1);
+        //    // 
+        //}
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        interactableObject = null;
     }
 
     private void Update()
@@ -108,11 +127,27 @@ public class Player : MonoBehaviour
             equipment.Load();
         }
 
-        // Open the inventory screen
+        // Open/close the inventory screen
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             DisplayInventory();
         }
+
+        if (Input.GetMouseButtonDown(0) & interactableObject)
+        {
+            // Check if the object is an item, i.e. it has the GroundItem script attached 
+            if (interactableObject.GetComponent<GroundItem>())
+            {
+                // Add the new item to the inventory and delete the gameobject
+                Item _item = new Item(interactableObject.GetComponent<GroundItem>().item);
+                if (inventory.AddItem(_item, 1))
+                {
+                    Destroy(interactableObject);
+                    interactableObject = null;
+                }
+            }
+        }
+
     }
 
     // Enable and disable the inventory screen, this also probably needs to pause the game
