@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Torch
   m_EditorClassIdentifier: 
   uiDisplay: {fileID: -68751727340038015, guid: 5a26f1525a7a42444b7969cd53d80bbb, type: 3}
+  characterDisplay: {fileID: 1961836615962498064, guid: 1b2e3c70b65150242ba7f5bbeddcb782, type: 3}
   stackable: 0
   type: 1
   description: For illuminating things

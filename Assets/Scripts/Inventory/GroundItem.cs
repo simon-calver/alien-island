@@ -20,5 +20,9 @@ public class GroundItem : MonoBehaviour, ISerializationCallbackReceiver
 #endif    
     }
     
+    public void Highlight()
+    {
+
+    }
 
 }

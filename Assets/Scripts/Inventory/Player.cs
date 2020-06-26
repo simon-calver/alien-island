@@ -11,6 +11,9 @@ public class Player : MonoBehaviour
     public InventoryObject inventory;
     public InventoryObject equipment;
 
+    public GameObject leftArm;
+    public GameObject rightArm;
+
     public Attribute[] attributes;
 
     private bool inventoryDisplayActive;
@@ -26,8 +29,8 @@ public class Player : MonoBehaviour
         }
         for (int i = 0; i < equipment.GetSlots.Length; i++)
         {
-            equipment.GetSlots[i].OnBeforeUpdate += OnBeforeSlotUpdate;
-            equipment.GetSlots[i].OnAfterUpdate += OnAfterSlotUpdate;
+            equipment.GetSlots[i].OnBeforeUpdate += OnRemoveItem;
+            equipment.GetSlots[i].OnAfterUpdate += OnAddItem;
         }
 
         // Make sure the inventory is not displayed initially
@@ -35,7 +38,7 @@ public class Player : MonoBehaviour
         DisplayInventory();
     }
 
-    public void OnBeforeSlotUpdate(InventorySlot _slot)
+    public void OnRemoveItem(InventorySlot _slot)
     {
         if (_slot.ItemObject == null)
             return;
@@ -52,6 +55,16 @@ public class Player : MonoBehaviour
                             attributes[j].value.RemoveModifier(_slot.item.buffs[i]);
                     }
                 }
+
+                // The slot position corresponds to the part of the body this object is attached to
+                Transform body_part = this.transform.GetChild(_slot.slotPosition);
+
+                // Delete any existing prefabs in this slot
+                for (int i = 0; i < body_part.transform.childCount; i++)
+                {
+                    Destroy(body_part.transform.GetChild(i).gameObject);
+                }
+
                 break;
             case InterfaceType.Chest:
                 break;
@@ -60,7 +73,7 @@ public class Player : MonoBehaviour
         }
 
     } 
-    public void OnAfterSlotUpdate(InventorySlot _slot)
+    public void OnAddItem(InventorySlot _slot)
     {
         if (_slot.ItemObject == null)
             return;
@@ -77,6 +90,28 @@ public class Player : MonoBehaviour
                             attributes[j].value.AddModifier(_slot.item.buffs[i]);                        
                     }
                 }
+
+                // Check if this item can be dispayed on the player
+                if (_slot.ItemObject.characterDisplay != null)
+                {
+
+                    // The slot position corresponds to the part of the body this object is attached to
+                    Transform body_part = this.transform.GetChild(_slot.slotPosition);
+
+                    // Delete any existing prefabs in this slot
+                    for (int i = 0; i < body_part.transform.childCount; i++)
+                    {
+                        Destroy(body_part.transform.GetChild(i).gameObject);
+                    }
+
+                    // Add the item prefab as child of the corresponding body part with the correct rotation and position
+                    var obj = Instantiate(_slot.ItemObject.characterDisplay, body_part.transform.position, body_part.transform.rotation, transform);
+
+                    // Set the parent of this and reset the rotation to zero (IS it neccessary to do this outside of the instantiate?)
+                    obj.transform.transform.SetParent(body_part.transform, false);
+                    obj.transform.localRotation = Quaternion.identity;
+                }
+
                 break;
             case InterfaceType.Chest:
                 break;
@@ -155,18 +190,14 @@ public class Player : MonoBehaviour
     {
         if (inventoryDisplayActive)
         {
-            // Disable the game object
+            // Disable the game object and update the boolean
             inventoryDisplay.SetActive(false);
-
-            // Update the boolean
             inventoryDisplayActive = false;
         }
         else
         {
-            // Enable the game object
+            // Enable the game object and update the boolean
             inventoryDisplay.SetActive(true);
-
-            // Update the boolean
             inventoryDisplayActive = true; 
         }
 

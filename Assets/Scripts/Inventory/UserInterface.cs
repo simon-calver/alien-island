@@ -137,12 +137,13 @@ public abstract class UserInterface : MonoBehaviour
         return tempItem;
     }
 
+    // Updates the positions of the item in the inventory when mouse is released
     public void OnDragEnd(GameObject obj)
     {
-     
-
-
+        // Remove the object showing what is being moved
         Destroy(MouseData.tempItemBeingDragged);
+
+        // The item in the inventory is deleted if it is released outside of the inventory screens
         if(MouseData.interfaceMouseIsOver == null)
         {
             slotsOnInterface[obj].RemoveItem();

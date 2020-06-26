@@ -27,6 +27,8 @@ public class StaticInterface : UserInterface
 
             slotsOnInterface.Add(obj, inventory.GetSlots[i]);
 
+            // Set the index of this slot to the count, there may be a beetter way to access this
+            inventory.GetSlots[i].slotPosition = i;
         }
     }
 }

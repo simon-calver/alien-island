@@ -11,18 +11,6 @@ public enum ItemType
     Legwear,
     Footwear,
     Consumable
-
-
-    //Food,
-    //Head,
-    //Feet,
-    //Torso,
-    //weapon,
-    //shield,
-    //Shoes,
-    //Tops,
-    //Equipment,
-    //Default
 }
 
 public enum Attributes
@@ -36,11 +24,11 @@ public enum Attributes
 public class ItemObject : ScriptableObject
 {
     public Sprite uiDisplay;
+    public GameObject characterDisplay;
     public bool stackable;
     public ItemType type;
     [TextArea(15,20)]
     public string description;
-    //public ItemBuff[] buffs;
     
     public Item data = new Item();
 

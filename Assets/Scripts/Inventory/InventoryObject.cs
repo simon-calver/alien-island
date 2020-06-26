@@ -168,6 +168,9 @@ public class InventorySlot
     public Item item;
     public int amount;
 
+    // This is used to find the position of this slot from the user interface 
+    public int slotPosition;
+
     [System.NonSerialized]
     public GameObject slotDisplay;
     [System.NonSerialized]
