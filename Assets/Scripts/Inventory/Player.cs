@@ -11,8 +11,8 @@ public class Player : MonoBehaviour
     public InventoryObject inventory;
     public InventoryObject equipment;
 
-    public GameObject leftArm;
-    public GameObject rightArm;
+    // For keeping track of usable equipped items
+    private bool rightArmEquipped;
 
     public Attribute[] attributes;
 
@@ -65,6 +65,13 @@ public class Player : MonoBehaviour
                     Destroy(body_part.transform.GetChild(i).gameObject);
                 }
 
+                // For now keep track of  what is equipped like this
+                if (_slot.slotPosition == 3)
+                {
+                    rightArmEquipped = false;
+                }
+                
+
                 break;
             case InterfaceType.Chest:
                 break;
@@ -110,6 +117,11 @@ public class Player : MonoBehaviour
                     // Set the parent of this and reset the rotation to zero (IS it neccessary to do this outside of the instantiate?)
                     obj.transform.transform.SetParent(body_part.transform, false);
                     obj.transform.localRotation = Quaternion.identity;
+
+                    if (_slot.slotPosition == 3)
+                    {
+                        rightArmEquipped = true;
+                    }
                 }
 
                 break;
@@ -168,6 +180,7 @@ public class Player : MonoBehaviour
             DisplayInventory();
         }
 
+        // Use right click to interact with things
         if (Input.GetMouseButtonDown(0) & interactableObject)
         {
             // Check if the object is an item, i.e. it has the GroundItem script attached 
@@ -183,6 +196,10 @@ public class Player : MonoBehaviour
             }
         }
 
+        if (Input.GetMouseButtonDown(1) & rightArmEquipped)
+        {
+            this.transform.GetChild(3).GetComponentInChildren<UseItem>().MainItemUse();
+        }
     }
 
     // Enable and disable the inventory screen, this also probably needs to pause the game
