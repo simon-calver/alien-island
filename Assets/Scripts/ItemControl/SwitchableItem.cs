@@ -6,6 +6,4 @@ using UnityEngine;
 public class SwitchableItem : UseItem
 {
     public bool itemOn;
-
-
 }

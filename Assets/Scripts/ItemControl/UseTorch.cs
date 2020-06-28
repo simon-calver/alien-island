@@ -25,9 +25,6 @@ public class UseTorch : SwitchableItem
             onSound.Play();
             this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
             itemOn = true;
-        }
-        
-        
-        
+        }       
     }
 }

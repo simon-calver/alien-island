@@ -36,6 +36,9 @@ public class Player : MonoBehaviour
         // Make sure the inventory is not displayed initially
         inventoryDisplayActive = true;
         DisplayInventory();
+
+        // Set what is displayed on the HUD initially
+        HUDInitialDisplay();
     }
 
     public void OnRemoveItem(InventorySlot _slot)
@@ -122,6 +125,10 @@ public class Player : MonoBehaviour
                     {
                         rightArmEquipped = true;
                     }
+
+                    // This function takes a gameobject as its argument with most derived classes do not use it,
+                    // it seems silly to pass the argument to them all
+                    obj.GetComponentInChildren<UseItem>().OnEquipItem(HUD);
                 }
 
                 break;
@@ -224,6 +231,14 @@ public class Player : MonoBehaviour
             inventory.GetSlots[i].UpdateSlot(inventory.GetSlots[i].item, inventory.GetSlots[i].amount);
         }
     }
+
+    // Set which canvases ara initially displayed in the game using their names (so make sure you change this 
+    // if the names are changed!)
+    private void HUDInitialDisplay()
+    {
+        HUD.transform.Find("Minimap").gameObject.SetActive(false);
+    }
+
 
     public void AttributeModified(Attribute attribute)
     {

@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class UseItem : MonoBehaviour
 {
+    public virtual void OnEquipItem(GameObject _minimapCanvas)
+    {
+    }
+
     public virtual void MainItemUse()
     {
-
     }
 }
