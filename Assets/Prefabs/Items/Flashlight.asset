@@ -16,8 +16,16 @@ MonoBehaviour:
   characterDisplay: {fileID: 1961836615962498064, guid: 1b2e3c70b65150242ba7f5bbeddcb782, type: 3}
   stackable: 0
   type: 1
-  description: For illuminating things
+  description: 'Flashlight: For illuminating things in the dark'
   data:
-    Name: 
+    Name: Flashlight
     Id: 3
     buffs: []
+    fixedStats:
+    - stat: 0
+      value: 2
+    variableStats:
+    - stat: 0
+      value: 550
+      min: 0
+      max: 100

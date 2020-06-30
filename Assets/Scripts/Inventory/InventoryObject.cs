@@ -5,6 +5,7 @@ using UnityEditor;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Runtime.Serialization;
+using System.Linq;
 
 public enum InterfaceType
 {
@@ -85,6 +86,52 @@ public class InventoryObject : ScriptableObject
             item1.UpdateSlot(temp.item, temp.amount);
         }
 
+    }
+
+    // There needs to be a pop-up to choose between combine and swap
+    public void CombineItems(InventorySlot item1, InventorySlot item2)
+    {
+        // Count how many changes are made, if nothing is changed the items are swapped otherwise item1 has its amount reduced by 1
+        int updatesCount = 0;
+
+        //
+        // The items in the database needs to be found so the values on this can be updated, the items passed to the function are the 
+        // diplay prefabs 
+        //for (int i = 0; i < item1.ItemObject.data.variableStats.Length; i++)
+        //{
+        //    for (int j = 0; j < item2.ItemObject.data.variableStats.Length; j++)
+        //    {
+        //    //    Debug.Log(slotsOnInterface[obj].item.variableStats[0]);//.data.variableStats[0]);// parent.inventory.database.ItemObjects[slotsOnInterface[obj].item.Id].uiDisplay);
+
+        //        if (item2.ItemObject.data.variableStats[j].stat == item1.ItemObject.data.variableStats[i].stat)
+        //        {
+        //            item2.ItemObject.data.variableStats[j].AddValue(item1.ItemObject.data.variableStats[i].value); 
+        //            updatesCount += 1;
+        //        }
+        //    }
+        //}
+        for (int i = 0; i < item1.item.variableStats.Length; i++)
+        {
+            for (int j = 0; j < item2.item.variableStats.Length; j++)
+            {
+                Debug.Log(item1.item.variableStats.Length);//.data.variableStats[0]);// parent.inventory.database.ItemObjects[slotsOnInterface[obj].item.Id].uiDisplay);
+                Debug.Log(item1.item.variableStats[i].value);
+                if (item2.item.variableStats[j].stat == item1.item.variableStats[i].stat)
+                {
+                    item2.item.variableStats[j].AddValue(item1.item.variableStats[i].value);
+                    updatesCount += 1;
+                }
+            }
+        }
+        // Remove an item if it has been used otherwise swap their positions
+        if (updatesCount > 0)
+        {
+            item1.RemoveAmount(1); 
+        }
+        else
+        {
+            SwapItems(item1, item2);
+        }
     }
 
     public void RemoveItem(Item _item)
@@ -205,6 +252,18 @@ public class InventorySlot
     public void AddAmount(int value)
     {
         UpdateSlot(item, amount += value);         
+    }
+    public void RemoveAmount(int value)
+    {
+        if (amount > 1)
+        {
+            UpdateSlot(item, amount -= value);
+        }
+        else
+        {
+            RemoveItem();
+        }
+        
     }
     public void UpdateSlot(Item _item, int _amount)
     {

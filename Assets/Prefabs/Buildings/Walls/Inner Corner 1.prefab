@@ -208,7 +208,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 35
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -245,4 +245,4 @@ MonoBehaviour:
   - {x: 0.18175316, y: -0.15905488, z: 0}
   m_ShapePathHash: 1540547449
   m_Mesh: {fileID: 0}
-  m_InstanceId: -94236
+  m_InstanceId: 26580

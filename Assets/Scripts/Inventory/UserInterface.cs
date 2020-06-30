@@ -57,12 +57,6 @@ public abstract class UserInterface : MonoBehaviour
         }
     }
 
-    //// Update is called once per frame
-    //void Update()
-    //{
-    //    slotsOnInterface.UpdateSlotDisplay();
-    //}
-
     public abstract void CreateSlots();
 
     protected void AddEvent(GameObject obj, EventTriggerType type, UnityAction<BaseEventData> action)
@@ -143,6 +137,8 @@ public abstract class UserInterface : MonoBehaviour
         // Remove the object showing what is being moved
         Destroy(MouseData.tempItemBeingDragged);
 
+        // If the object is released outside of the inventory show a pop-up "Do you want to delete"
+        // If it is over an inventroy slot check if the things can be combined
         // The item in the inventory is deleted if it is released outside of the inventory screens
         if(MouseData.interfaceMouseIsOver == null)
         {
@@ -152,7 +148,16 @@ public abstract class UserInterface : MonoBehaviour
         if (MouseData.slotHoverOver)
         {
             InventorySlot mouseHoverSlotData = MouseData.interfaceMouseIsOver.slotsOnInterface[MouseData.slotHoverOver];
-            inventory.SwapItems(slotsOnInterface[obj], mouseHoverSlotData);
+
+            // If the object being moved is consumable check if the slot it is dragged to has an item with the same stats
+            if (slotsOnInterface[obj].ItemObject.type == ItemType.Consumable &&  mouseHoverSlotData.ItemObject != null)
+            {
+                inventory.CombineItems(slotsOnInterface[obj], mouseHoverSlotData);
+            }
+            else
+            {
+                inventory.SwapItems(slotsOnInterface[obj], mouseHoverSlotData);
+            }
         }
     }
 
