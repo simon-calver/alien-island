@@ -17,13 +17,20 @@ public class UseTorch : SwitchableItem
         if (itemOn)
         {
             offSound.Play();
-            this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            for (int i = 0; i < this.gameObject.transform.childCount; i++)
+            {
+                this.gameObject.transform.GetChild(i).gameObject.SetActive(false);
+            }
             itemOn = false;
         }
         else if (!itemOn)
         {
             onSound.Play();
-            this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            for (int i = 0; i < this.gameObject.transform.childCount; i++)
+            {
+                this.gameObject.transform.GetChild(i).gameObject.SetActive(true);
+            }
+            
             itemOn = true;
         }       
     }

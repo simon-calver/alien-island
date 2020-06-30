@@ -26,6 +26,6 @@ MonoBehaviour:
       value: 2
     variableStats:
     - stat: 0
-      value: 550
+      value: 20
       min: 0
       max: 100

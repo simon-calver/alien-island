@@ -22,148 +22,223 @@ MonoBehaviour:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
     - AllowedItems: 
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      slotPosition: 0
