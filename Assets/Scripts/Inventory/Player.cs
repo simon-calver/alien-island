@@ -60,12 +60,12 @@ public class Player : MonoBehaviour
                 }
 
                 // The slot position corresponds to the part of the body this object is attached to
-                Transform body_part = this.transform.GetChild(_slot.slotPosition);
+                Transform body_part_slot = this.transform.GetChild(_slot.slotPosition).Find("Item Slot");
 
                 // Delete any existing prefabs in this slot
-                for (int i = 0; i < body_part.transform.childCount; i++)
+                for (int i = 0; i < body_part_slot.transform.childCount; i++)
                 {
-                    Destroy(body_part.transform.GetChild(i).gameObject);
+                    Destroy(body_part_slot.transform.GetChild(i).gameObject);
                 }
 
                 // For now keep track of  what is equipped like this
@@ -106,20 +106,22 @@ public class Player : MonoBehaviour
                 {
 
                     // The slot position corresponds to the part of the body this object is attached to
-                    Transform body_part = this.transform.GetChild(_slot.slotPosition);
+                    Transform body_part_slot = this.transform.GetChild(_slot.slotPosition).Find("Item Slot");
+                    //Transform body_part = this.transform.GetChild(_slot.slotPosition);
 
                     // Delete any existing prefabs in this slot
-                    for (int i = 0; i < body_part.transform.childCount; i++)
+                    for (int i = 0; i < body_part_slot.transform.childCount; i++)
                     {
-                        Destroy(body_part.transform.GetChild(i).gameObject);
+                        Destroy(body_part_slot.transform.GetChild(i).gameObject);
                     }
 
                     // Add the item prefab as child of the corresponding body part with the correct rotation and position
-                    var obj = Instantiate(_slot.ItemObject.characterDisplay, body_part.transform.position, body_part.transform.rotation, transform);
+                    var obj = Instantiate(_slot.ItemObject.characterDisplay, body_part_slot.transform.position, body_part_slot.transform.rotation, transform);
 
-                    // Set the parent of this and reset the rotation to zero (IS it neccessary to do this outside of the instantiate?)
-                    obj.transform.transform.SetParent(body_part.transform, false);
+                    // Set the parent of this and reset the rotation and position to zero (IS it neccessary to do this outside of the instantiate?)
+                    obj.transform.transform.SetParent(body_part_slot.transform, false);
                     obj.transform.localRotation = Quaternion.identity;
+                    obj.transform.localPosition = Vector3.zero;
 
                     if (_slot.slotPosition == 3)
                     {

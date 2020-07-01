@@ -94,28 +94,12 @@ public class InventoryObject : ScriptableObject
         // Count how many changes are made, if nothing is changed the items are swapped otherwise item1 has its amount reduced by 1
         int updatesCount = 0;
 
-        //
         // The items in the database needs to be found so the values on this can be updated, the items passed to the function are the 
-        // diplay prefabs 
-        //for (int i = 0; i < item1.ItemObject.data.variableStats.Length; i++)
-        //{
-        //    for (int j = 0; j < item2.ItemObject.data.variableStats.Length; j++)
-        //    {
-        //    //    Debug.Log(slotsOnInterface[obj].item.variableStats[0]);//.data.variableStats[0]);// parent.inventory.database.ItemObjects[slotsOnInterface[obj].item.Id].uiDisplay);
-
-        //        if (item2.ItemObject.data.variableStats[j].stat == item1.ItemObject.data.variableStats[i].stat)
-        //        {
-        //            item2.ItemObject.data.variableStats[j].AddValue(item1.ItemObject.data.variableStats[i].value); 
-        //            updatesCount += 1;
-        //        }
-        //    }
-        //}
+        // display prefabs. To access the item prefab do item1.ItemObject.data, to access the item in the database do item1.item
         for (int i = 0; i < item1.item.variableStats.Length; i++)
         {
             for (int j = 0; j < item2.item.variableStats.Length; j++)
             {
-                Debug.Log(item1.item.variableStats.Length);//.data.variableStats[0]);// parent.inventory.database.ItemObjects[slotsOnInterface[obj].item.Id].uiDisplay);
-                Debug.Log(item1.item.variableStats[i].value);
                 if (item2.item.variableStats[j].stat == item1.item.variableStats[i].stat)
                 {
                     item2.item.variableStats[j].AddValue(item1.item.variableStats[i].value);
@@ -123,6 +107,7 @@ public class InventoryObject : ScriptableObject
                 }
             }
         }
+
         // Remove an item if it has been used otherwise swap their positions
         if (updatesCount > 0)
         {
