@@ -8,6 +8,10 @@ public class UseItem : MonoBehaviour
     {
     }
 
+    public virtual void OnUnequipItem(GameObject _minimapCanvas)
+    {
+    }
+
     public virtual void MainItemUse()
     {
     }

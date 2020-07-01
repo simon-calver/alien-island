@@ -111,7 +111,8 @@ public class InventoryObject : ScriptableObject
         // Remove an item if it has been used otherwise swap their positions
         if (updatesCount > 0)
         {
-            item1.RemoveAmount(1); 
+            item1.RemoveAmount(1);
+            item2.UpdateSlot(item2.item, item2.amount);
         }
         else
         {
@@ -169,7 +170,7 @@ public class InventoryObject : ScriptableObject
     [ContextMenu("Clear")]
     public void Clear()
     {
-        Container.Clear();// = new Inventory();
+        Container.Clear();
     }
 
 }
@@ -189,8 +190,6 @@ public class Inventory
 
 public delegate void SlotUpdated(InventorySlot _slot);
 
-
-
 [System.Serializable]
 public class InventorySlot
 {
@@ -199,6 +198,7 @@ public class InventorySlot
     public UserInterface parent;
     public Item item;
     public int amount;
+    //public int fillAmount;
 
     // This is used to find the position of this slot from the user interface 
     public int slotPosition;

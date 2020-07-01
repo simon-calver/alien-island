@@ -23,9 +23,14 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        // Creates new ModifiableInt for each attribute, the value in the inspector needs
+        // to be added. I think this is because there is a method that is added to the class 
+        // that displays info in the editor: this can be removed...
         for (int i = 0; i < attributes.Length; i++)
         {
+            int baseValue = attributes[i].value.BaseValue;
             attributes[i].SetParent(this);
+            attributes[i].value.BaseValue = baseValue;
         }
         for (int i = 0; i < equipment.GetSlots.Length; i++)
         {
@@ -39,6 +44,16 @@ public class Player : MonoBehaviour
 
         // Set what is displayed on the HUD initially
         HUDInitialDisplay();
+
+        // Get reference to the player movement script, so values in it can be updated from this script
+        // ITS PROBABLY A BETTER IDEA TO CHECK THAT THESE EXISTS ETC RATHER THAN USEING AN INDEX
+        UpdateMovementSpeed();
+    }
+
+    public void UpdateMovementSpeed()
+    {
+        this.gameObject.GetComponent<PlayerMovement>().walkSpeed = attributes[0].value.ModifiedValue;
+        this.gameObject.GetComponent<PlayerMovement>().runSpeed = attributes[1].value.ModifiedValue;
     }
 
     public void OnRemoveItem(InventorySlot _slot)
@@ -59,12 +74,16 @@ public class Player : MonoBehaviour
                     }
                 }
 
+                // Update any scripts that use the attribute values
+                UpdateMovementSpeed();
+
                 // The slot position corresponds to the part of the body this object is attached to
                 Transform body_part_slot = this.transform.GetChild(_slot.slotPosition).Find("Item Slot");
 
-                // Delete any existing prefabs in this slot
+                // Delete any existing prefabs in this slot after running the unequip method
                 for (int i = 0; i < body_part_slot.transform.childCount; i++)
                 {
+                    body_part_slot.transform.GetChild(i).gameObject.GetComponentInChildren<UseItem>().OnUnequipItem(HUD);
                     Destroy(body_part_slot.transform.GetChild(i).gameObject);
                 }
 
@@ -73,7 +92,7 @@ public class Player : MonoBehaviour
                 {
                     rightArmEquipped = false;
                 }
-                
+
 
                 break;
             case InterfaceType.Chest:
@@ -100,6 +119,9 @@ public class Player : MonoBehaviour
                             attributes[j].value.AddModifier(_slot.item.buffs[i]);                        
                     }
                 }
+                
+                // Update any scripts that use the attribute values
+                UpdateMovementSpeed();
 
                 // Check if this item can be dispayed on the player
                 if (_slot.ItemObject.characterDisplay != null)
@@ -244,7 +266,7 @@ public class Player : MonoBehaviour
 
     public void AttributeModified(Attribute attribute)
     {
-        Debug.Log(string.Concat(attribute.type, " was updated! Value is now", attribute.value.ModifiedValue));
+        Debug.Log(string.Concat(attribute.type, " was updated! Value is now ", attribute.value.ModifiedValue));
     }
 
     private void OnApplicationQuit()

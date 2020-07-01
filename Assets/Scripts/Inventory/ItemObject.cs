@@ -16,7 +16,8 @@ public enum ItemType
 public enum Attributes
 {
     Stamina,
-    Speed, 
+    WalkSpeed, 
+    RunSpeed,
     Strength
 }
 
@@ -28,7 +29,8 @@ public enum FixedItemAttributes
 
 public enum VariableItemAttributes
 {
-    Charge
+    Charge,
+    Fuel
 }
 
 [CreateAssetMenu(fileName = "New Item", menuName = "Inventory System/Items/Item")]
@@ -37,6 +39,7 @@ public class ItemObject : ScriptableObject
     public Sprite uiDisplay;
     public GameObject characterDisplay;
     public bool stackable;
+    public bool chargable;
     public ItemType type;
     [TextArea(15,20)]
     public string description;

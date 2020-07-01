@@ -22,34 +22,64 @@ MonoBehaviour:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      fillAmount: 0
+      slotPosition: 0
     - AllowedItems: 01000000
       item:
         Name: 
         Id: -1
         buffs: []
-      amount: 0
+        fixedStats:
+        - stat: 0
+          value: 2
+        variableStats:
+        - stat: 0
+          value: 100
+          min: 0
+          max: 100
+      amount: 1
+      fillAmount: 0
+      slotPosition: 1
     - AllowedItems: 02000000
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      fillAmount: 0
+      slotPosition: 2
     - AllowedItems: 01000000
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      fillAmount: 0
+      slotPosition: 3
     - AllowedItems: 03000000
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      fillAmount: 0
+      slotPosition: 4
     - AllowedItems: 04000000
       item:
         Name: 
         Id: -1
         buffs: []
+        fixedStats: []
+        variableStats: []
       amount: 0
+      fillAmount: 0
+      slotPosition: 5

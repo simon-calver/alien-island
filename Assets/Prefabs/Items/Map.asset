@@ -15,9 +15,18 @@ MonoBehaviour:
   uiDisplay: {fileID: 5508725064705088119, guid: 5a26f1525a7a42444b7969cd53d80bbb, type: 3}
   characterDisplay: {fileID: 3632006712696001308, guid: 82e34f41f91a5964799a81681b76e364, type: 3}
   stackable: 0
+  chargable: 1
   type: 1
   description: 'Location '
   data:
-    Name: 
+    Name: Map
     Id: 2
     buffs: []
+    fixedStats:
+    - stat: 0
+      value: 2
+    variableStats:
+    - stat: 0
+      value: 60
+      min: 0
+      max: 100

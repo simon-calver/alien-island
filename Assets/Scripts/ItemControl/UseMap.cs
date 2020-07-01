@@ -13,6 +13,13 @@ public class UseMap : SwitchableItem
         minimapCanvas.SetActive(true);
     }
 
+    public override void OnUnequipItem(GameObject HUD)
+    {
+        // Get reference to the canvas with the minimap attached and make sure it is active
+        minimapCanvas = HUD.transform.Find("Minimap").gameObject;
+        minimapCanvas.SetActive(false);
+    }
+
     public override void MainItemUse()
     {
         // Turn the map on and off, the appearance of the prefab needs to change and the map canvas turned off

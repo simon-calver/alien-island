@@ -41,12 +41,32 @@ public abstract class UserInterface : MonoBehaviour
 
     private void OnSlotUpdate(InventorySlot _slot)
     {
+        // Updates the display in the inventory; item image, amount text and slider value
         if (_slot.item.Id >= 0)
         {
-            _slot.slotDisplay.transform.GetChild(0).GetComponentInChildren<Image>().sprite = _slot.ItemObject.uiDisplay;//inventory.database.GetItem[_slot.Value.item.Id].uiDisplay;
+            _slot.slotDisplay.transform.GetChild(0).GetComponentInChildren<Image>().sprite = _slot.ItemObject.uiDisplay; 
             _slot.slotDisplay.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1, 1, 1, 1);
             if (_slot.slotDisplay.GetComponentInChildren<TextMeshProUGUI>() != null)
                 _slot.slotDisplay.GetComponentInChildren<TextMeshProUGUI>().text = _slot.amount == 1 ? "" : _slot.amount.ToString("n0");
+
+            // If this item has a charge stat this is displayed also
+            if (_slot.ItemObject.chargable)
+            {
+                for (int i = 0; i < _slot.item.variableStats.Length; i++)
+                {
+                    if (_slot.item.variableStats[i].stat == VariableItemAttributes.Charge)
+                    {
+                        _slot.slotDisplay.GetComponentInChildren<Slider>().value = (float)_slot.item.variableStats[i].value / 100f;
+                        break;
+                    }
+                }
+                SliderColourGradient(_slot.slotDisplay.transform.GetComponentInChildren<Slider>());
+            }
+            else
+            {
+                SliderClear(_slot.slotDisplay.transform.GetComponentInChildren<Slider>());
+            }
+            
         }
         else
         {
@@ -54,7 +74,29 @@ public abstract class UserInterface : MonoBehaviour
             _slot.slotDisplay.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1, 1, 1, 0);
             if (_slot.slotDisplay.GetComponentInChildren<TextMeshProUGUI>() != null)
                 _slot.slotDisplay.GetComponentInChildren<TextMeshProUGUI>().text = "";
+
+            SliderClear(_slot.slotDisplay.transform.GetComponentInChildren<Slider>());
+
         }
+    }
+
+    public void SliderColourGradient(Slider slider)
+    {             
+        // Make a colour that transitions from red to green as the slider value is increased
+        Color newColour = new Color(1f - (slider.value / slider.maxValue),
+                                    slider.value / slider.maxValue,
+                                    0f, 1f);
+        slider.targetGraphic.GetComponent<Image>().color = newColour;
+        slider.gameObject.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1, 1, 1, 1);
+    }
+
+    // Makes the sprites attached to the slider transparent
+    public void SliderClear(Slider slider)
+    {
+        slider.value = 0;
+        Color newColour = new Color(1f, 1f, 1f, 0f);
+        slider.targetGraphic.GetComponent<Image>().color = newColour;
+        slider.gameObject.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1, 1, 1, 0);
     }
 
     public abstract void CreateSlots();
@@ -82,7 +124,7 @@ public abstract class UserInterface : MonoBehaviour
             textPopup.GetComponent<RectTransform>().position = obj.GetComponent<RectTransform>().position;
 
             // Update the text display and background colour
-            textPopup.GetComponentInChildren<TextMeshProUGUI>().text = slotsOnInterface[obj].ItemObject.description;
+            textPopup.GetComponentInChildren<TextMeshProUGUI>().text = slotsOnInterface[obj].ItemObject.data.Name+": "+slotsOnInterface[obj].ItemObject.description;
             textPopup.GetComponentInChildren<Image>().color = new Color(0.1f, 0.1f, 0.1f, 1f);
         }
     }
@@ -99,9 +141,6 @@ public abstract class UserInterface : MonoBehaviour
     public void OnEnterInterface(GameObject obj)
     {
         MouseData.interfaceMouseIsOver = obj.GetComponent<UserInterface>();
-
-        //
-        //Debug.Log("ooo");
     }
 
     public void OnExitInterface(GameObject obj)
@@ -176,29 +215,29 @@ public static class MouseData
     public static GameObject slotHoverOver;
 }
 
-public static class ExtensionMethods
-{
-    public static void UpdateSlotDisplay(this Dictionary<GameObject, InventorySlot> _slotsOnInterface)
-    {
-        foreach (KeyValuePair<GameObject, InventorySlot> _slot in _slotsOnInterface)
-        {
-            if (_slot.Value.item.Id >= 0)
-            {
-                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().sprite = _slot.Value.ItemObject.uiDisplay;//inventory.database.GetItem[_slot.Value.item.Id].uiDisplay;
-                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1, 1, 1, 1);
+//public static class ExtensionMethods
+//{
+//    public static void UpdateSlotDisplay(this Dictionary<GameObject, InventorySlot> _slotsOnInterface)
+//    {
+//        foreach (KeyValuePair<GameObject, InventorySlot> _slot in _slotsOnInterface)
+//        {
+//            if (_slot.Value.item.Id >= 0)
+//            {
+//                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().sprite = _slot.Value.ItemObject.uiDisplay;//inventory.database.GetItem[_slot.Value.item.Id].uiDisplay;
+//                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1, 1, 1, 1);
 
-                // Not all slots have text mesh pro components, this checks that they do before changing them 
-                if (_slot.Key.GetComponentInChildren<TextMeshProUGUI>() != null)
-                    _slot.Key.GetComponentInChildren<TextMeshProUGUI>().text = _slot.Value.amount == 1 ? "" : _slot.Value.amount.ToString("n0");
-            }
-            else
-            {
-                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().sprite = null;
-                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1, 1, 1, 0);
+//                // Not all slots have text mesh pro components, this checks that they do before changing them 
+//                if (_slot.Key.GetComponentInChildren<TextMeshProUGUI>() != null)
+//                    _slot.Key.GetComponentInChildren<TextMeshProUGUI>().text = _slot.Value.amount == 1 ? "" : _slot.Value.amount.ToString("n0");
+//            }
+//            else
+//            {
+//                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().sprite = null;
+//                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1, 1, 1, 0);
 
-                if (_slot.Key.GetComponentInChildren<TextMeshProUGUI>() != null)
-                    _slot.Key.GetComponentInChildren<TextMeshProUGUI>().text = "";
-            }
-        }
-    }
-}
+//                if (_slot.Key.GetComponentInChildren<TextMeshProUGUI>() != null)
+//                    _slot.Key.GetComponentInChildren<TextMeshProUGUI>().text = "";
+//            }
+//        }
+//    }
+//}

@@ -7,8 +7,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public Camera camera;
 
-    public float walkSpeed;
-    public float runSpeed;
+    public int walkSpeed;
+    public int runSpeed;
     float moveSpeed;
 
     float vertical;
@@ -32,7 +32,6 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         playerTransform = GetComponent<Transform>();
         playerAnimator = GetComponent<Animator>();
-
     }
 
     // Update is called once per frame
@@ -45,11 +44,11 @@ public class PlayerMovement : MonoBehaviour
         // The shift key changes the run speed
         if (Input.GetKey("left shift"))
         {
-            moveSpeed = runSpeed;
+            moveSpeed = (float)runSpeed/50f;
         }
         else
         {
-            moveSpeed = walkSpeed;
+            moveSpeed = (float)walkSpeed/50f;
         }
 
         // Get position of cursor in screen pixels and convert it to world coordinates
