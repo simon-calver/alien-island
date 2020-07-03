@@ -92,7 +92,7 @@ public class InventoryObject : ScriptableObject
     public void CombineItems(InventorySlot item1, InventorySlot item2)
     {
         // Count how many changes are made, if nothing is changed the items are swapped otherwise item1 has its amount reduced by 1
-        int updatesCount = 0;
+        int amount_to_add = 0;
 
         // The items in the database needs to be found so the values on this can be updated, the items passed to the function are the 
         // display prefabs. To access the item prefab do item1.ItemObject.data, to access the item in the database do item1.item
@@ -102,16 +102,20 @@ public class InventoryObject : ScriptableObject
             {
                 if (item2.item.variableStats[j].stat == item1.item.variableStats[i].stat)
                 {
-                    item2.item.variableStats[j].AddValue(item1.item.variableStats[i].value);
-                    updatesCount += 1;
+                    // Find the maximum amount possible of item1 that can be added
+                    int amount_needed = Mathf.CeilToInt((float)(item2.item.variableStats[j].max - item2.item.variableStats[j].value) / item1.item.variableStats[i].value);
+                    amount_to_add = Mathf.Min(amount_needed, item1.amount);
+                    Debug.Log(amount_to_add);
+                    item2.item.variableStats[j].AddValue(amount_to_add*item1.item.variableStats[i].value);
+                    //updatesCount += 1;
                 }
             }
         }
 
         // Remove an item if it has been used otherwise swap their positions
-        if (updatesCount > 0)
+        if (amount_to_add > 0)
         {
-            item1.RemoveAmount(1);
+            item1.RemoveAmount(amount_to_add);
             item2.UpdateSlot(item2.item, item2.amount);
         }
         else
@@ -240,7 +244,7 @@ public class InventorySlot
     }
     public void RemoveAmount(int value)
     {
-        if (amount > 1)
+        if (amount > value)
         {
             UpdateSlot(item, amount -= value);
         }

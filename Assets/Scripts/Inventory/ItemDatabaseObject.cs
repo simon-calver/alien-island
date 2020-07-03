@@ -15,6 +15,7 @@ public class ItemDatabaseObject : ScriptableObject, ISerializationCallbackReceiv
             if(ItemObjects[i].data.Id != i)
                 ItemObjects[i].data.Id = i;
             // GetItem.Add(i, Items[i]);
+                //Debug.Log(ItemObjects[i].data);    
         }
     }
 
@@ -25,6 +26,5 @@ public class ItemDatabaseObject : ScriptableObject, ISerializationCallbackReceiv
 
     public void OnBeforeSerialize()
     {
-      //  GetItem = new Dictionary<int, ItemObject>();
     }
 }

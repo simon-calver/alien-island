@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ac3412062a0c5488994ee1b1062d81, type: 3}
   m_Name: Torch
   m_EditorClassIdentifier: 
-  uiDisplay: {fileID: 6099581493293703690, guid: 5a26f1525a7a42444b7969cd53d80bbb, type: 3}
+  uiDisplay: {fileID: -5428206428529569624, guid: 5a26f1525a7a42444b7969cd53d80bbb, type: 3}
   characterDisplay: {fileID: 1961836615962498064, guid: d2f0decdb7ce4e94a869d7af75224239, type: 3}
   stackable: 0
+  chargable: 1
   type: 1
-  description: For illuminating things
+  description: For illuminating things in the dark with fire.
   data:
-    Name: 
+    Name: Torch
     Id: 4
     buffs:
     - attribute: 0
@@ -33,7 +34,7 @@ MonoBehaviour:
     - stat: 0
       value: 0.4
     variableStats:
-    - stat: 0
-      value: 100
+    - stat: 1
+      value: 50
       min: 0
       max: 100

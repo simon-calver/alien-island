@@ -370,7 +370,7 @@ MonoBehaviour:
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
-  m_ShadowIntensity: 0.62
+  m_ShadowIntensity: 0.178
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
@@ -402,6 +402,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxReduction: 0.2
   MaxIncrease: 0.2
+  maxXMovement: 1
+  maxYMovement: 1
   RateDamping: 0.1
   Strength: 300
-  StopFlickering: 0
+  _flickering: 0

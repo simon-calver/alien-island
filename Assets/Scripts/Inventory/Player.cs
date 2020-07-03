@@ -87,12 +87,11 @@ public class Player : MonoBehaviour
                     Destroy(body_part_slot.transform.GetChild(i).gameObject);
                 }
 
-                // For now keep track of  what is equipped like this
+                // For now keep track of what is equipped like this
                 if (_slot.slotPosition == 3)
                 {
                     rightArmEquipped = false;
                 }
-
 
                 break;
             case InterfaceType.Chest:
@@ -219,7 +218,7 @@ public class Player : MonoBehaviour
             {
                 // Add the new item to the inventory and delete the gameobject
                 Item _item = new Item(interactableObject.GetComponent<GroundItem>().item);
-                if (inventory.AddItem(_item, 1))
+                if (inventory.AddItem(_item, interactableObject.GetComponent<GroundItem>().amount))
                 {
                     Destroy(interactableObject);
                     interactableObject = null;

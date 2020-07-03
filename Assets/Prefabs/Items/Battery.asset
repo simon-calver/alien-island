@@ -15,10 +15,11 @@ MonoBehaviour:
   uiDisplay: {fileID: 6761164967045977113, guid: 5a26f1525a7a42444b7969cd53d80bbb, type: 3}
   characterDisplay: {fileID: 0}
   stackable: 1
+  chargable: 0
   type: 5
   description: Power
   data:
-    Name: 
+    Name: Batteries
     Id: 1
     buffs: []
     fixedStats:

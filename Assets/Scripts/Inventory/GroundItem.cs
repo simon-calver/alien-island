@@ -6,10 +6,10 @@ using UnityEditor;
 public class GroundItem : MonoBehaviour, ISerializationCallbackReceiver
 {
     public ItemObject item;
+    public int amount;
 
     public void OnAfterDeserialize()
     {
-
     }
 
     public void OnBeforeSerialize()
@@ -22,7 +22,6 @@ public class GroundItem : MonoBehaviour, ISerializationCallbackReceiver
     
     public void Highlight()
     {
-
     }
 
 }

@@ -54,7 +54,7 @@ public abstract class UserInterface : MonoBehaviour
             {
                 for (int i = 0; i < _slot.item.variableStats.Length; i++)
                 {
-                    if (_slot.item.variableStats[i].stat == VariableItemAttributes.Charge)
+                    if (_slot.item.variableStats[i].stat == VariableItemAttributes.Charge || _slot.item.variableStats[i].stat == VariableItemAttributes.Fuel)
                     {
                         _slot.slotDisplay.GetComponentInChildren<Slider>().value = (float)_slot.item.variableStats[i].value / 100f;
                         break;
@@ -76,18 +76,21 @@ public abstract class UserInterface : MonoBehaviour
                 _slot.slotDisplay.GetComponentInChildren<TextMeshProUGUI>().text = "";
 
             SliderClear(_slot.slotDisplay.transform.GetComponentInChildren<Slider>());
-
         }
     }
 
+    // Make a colour that transitions from red to green as the slider value is increased
     public void SliderColourGradient(Slider slider)
-    {             
-        // Make a colour that transitions from red to green as the slider value is increased
-        Color newColour = new Color(1f - (slider.value / slider.maxValue),
-                                    slider.value / slider.maxValue,
-                                    0f, 1f);
-        slider.targetGraphic.GetComponent<Image>().color = newColour;
-        slider.gameObject.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1, 1, 1, 1);
+    {               
+        Color fullColour = new Color(0.1f, 0.1f, 0.8f, 1f);
+        Color emptyColour = new Color(0.1f, 0.1f, 0.2f, 1f);
+        slider.targetGraphic.GetComponent<Image>().color = Color.Lerp(emptyColour, fullColour, slider.value);
+
+        //Color newColour = new Color(1f - (slider.value / slider.maxValue),
+        //                            slider.value / slider.maxValue,
+        //                            0f, 1f);
+        //slider.targetGraphic.GetComponent<Image>().color = newColour;
+        slider.gameObject.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1f, 1f, 1f, 1f);
     }
 
     // Makes the sprites attached to the slider transparent
@@ -96,7 +99,7 @@ public abstract class UserInterface : MonoBehaviour
         slider.value = 0;
         Color newColour = new Color(1f, 1f, 1f, 0f);
         slider.targetGraphic.GetComponent<Image>().color = newColour;
-        slider.gameObject.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1, 1, 1, 0);
+        slider.gameObject.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1f, 1f, 1f, 0f);
     }
 
     public abstract void CreateSlots();
