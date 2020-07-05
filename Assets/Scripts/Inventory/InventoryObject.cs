@@ -69,7 +69,8 @@ public class InventoryObject : ScriptableObject
         {
             if(GetSlots[i].item.Id <= -1)
             {
-                GetSlots[i].UpdateSlot(_item, _amount);
+                GetSlots[i].UpdateSlotAndEquipment(_item, _amount);
+                //GetSlots[i].UpdateEquipmentSlot();
                 return GetSlots[i];
             }
         }
@@ -82,10 +83,11 @@ public class InventoryObject : ScriptableObject
         if (item2.CanPlaceInSlot(item1.ItemObject) && item1.CanPlaceInSlot(item2.ItemObject))
         {
             InventorySlot temp = new InventorySlot(item2.item, item2.amount);
-            item2.UpdateSlot(item1.item, item1.amount);
-            item1.UpdateSlot(temp.item, temp.amount);
+            item2.UpdateSlotAndEquipment(item1.item, item1.amount);
+            //item2.UpdateEquipmentSlot();
+            item1.UpdateSlotAndEquipment(temp.item, temp.amount);
+            //item1.UpdateEquipmentSlot();
         }
-
     }
 
     // There needs to be a pop-up to choose between combine and swap
@@ -104,10 +106,8 @@ public class InventoryObject : ScriptableObject
                 {
                     // Find the maximum amount possible of item1 that can be added
                     int amount_needed = Mathf.CeilToInt((float)(item2.item.variableStats[j].max - item2.item.variableStats[j].value) / item1.item.variableStats[i].value);
-                    amount_to_add = Mathf.Min(amount_needed, item1.amount);
-                    Debug.Log(amount_to_add);
+                    amount_to_add = Mathf.Min(amount_needed, item1.amount);                    
                     item2.item.variableStats[j].AddValue(amount_to_add*item1.item.variableStats[i].value);
-                    //updatesCount += 1;
                 }
             }
         }
@@ -116,7 +116,8 @@ public class InventoryObject : ScriptableObject
         if (amount_to_add > 0)
         {
             item1.RemoveAmount(amount_to_add);
-            item2.UpdateSlot(item2.item, item2.amount);
+            item2.UpdateSlotAndEquipment(item2.item, item2.amount);
+            //item2.UpdateEquipmentSlot();
         }
         else
         {
@@ -130,7 +131,8 @@ public class InventoryObject : ScriptableObject
         {
             if(GetSlots[i].item == _item)
             {
-                GetSlots[i].UpdateSlot(null, 0);
+                GetSlots[i].UpdateSlotAndEquipment(null, 0);
+                //GetSlots[i].UpdateEquipmentSlot();
             }
         }
     }
@@ -165,7 +167,8 @@ public class InventoryObject : ScriptableObject
             Inventory newContainer = (Inventory)formatter.Deserialize(stream);
             for (int i = 0; i < GetSlots.Length; i++)
             {
-                GetSlots[i].UpdateSlot(newContainer.Slots[i].item, newContainer.Slots[i].amount);
+                GetSlots[i].UpdateSlotAndEquipment(newContainer.Slots[i].item, newContainer.Slots[i].amount);
+                //GetSlots[i].UpdateEquipmentSlot();
             }
             stream.Close();
         }
@@ -192,7 +195,9 @@ public class Inventory
     }
 }
 
+// This allows a method to be passed as a variable
 public delegate void SlotUpdated(InventorySlot _slot);
+//public delegate void SlotEquipmentUpdated(InventorySlot _slot);
 
 [System.Serializable]
 public class InventorySlot
@@ -202,7 +207,6 @@ public class InventorySlot
     public UserInterface parent;
     public Item item;
     public int amount;
-    //public int fillAmount;
 
     // This is used to find the position of this slot from the user interface 
     public int slotPosition;
@@ -213,6 +217,10 @@ public class InventorySlot
     public SlotUpdated OnAfterUpdate;
     [System.NonSerialized]
     public SlotUpdated OnBeforeUpdate;
+    [System.NonSerialized]
+    public SlotUpdated OnAfterEquipmentUpdate;
+    [System.NonSerialized]
+    public SlotUpdated OnBeforeEquipmentUpdate;
 
     public ItemObject ItemObject
     {
@@ -228,20 +236,24 @@ public class InventorySlot
 
     public InventorySlot()
     {
-        UpdateSlot(new Item(), 0);
+        UpdateSlotAndEquipment(new Item(), 0);
+        //UpdateEquipmentSlot();
     }
     public InventorySlot(Item _item,  int _amount)
     {
-        UpdateSlot(_item, _amount);
+        UpdateSlotAndEquipment(_item, _amount);
+        //UpdateEquipmentSlot();
     }
     public void RemoveItem()
     {
-        UpdateSlot(new Item(), 0);
+        UpdateSlotAndEquipment(new Item(), 0);
+        //UpdateEquipmentSlot();
     }
     public void AddAmount(int value)
     {
         UpdateSlot(item, amount += value);         
     }
+
     public void RemoveAmount(int value)
     {
         if (amount > value)
@@ -252,8 +264,8 @@ public class InventorySlot
         {
             RemoveItem();
         }
-        
     }
+
     public void UpdateSlot(Item _item, int _amount)
     {
         if (OnBeforeUpdate != null)
@@ -263,6 +275,30 @@ public class InventorySlot
         if (OnAfterUpdate != null)
             OnAfterUpdate.Invoke(this);
     }
+
+    public void UpdateSlotAndEquipment(Item _item, int _amount)
+    {
+        if (OnBeforeUpdate != null)
+            OnBeforeUpdate.Invoke(this);
+        if(OnBeforeEquipmentUpdate != null)
+            OnBeforeEquipmentUpdate.Invoke(this);        
+            
+        item = _item;
+        amount = _amount;
+        if (OnAfterUpdate != null)
+            OnAfterUpdate.Invoke(this);
+        if(OnAfterEquipmentUpdate != null)
+            OnAfterEquipmentUpdate.Invoke(this);       
+    }
+
+    //public void UpdateEquipmentSlot()
+    //{
+    //    if (OnBeforeEquipmentUpdate != null)
+    //        OnBeforeEquipmentUpdate.Invoke(this);
+
+    //    if (OnAfterEquipmentUpdate != null)
+    //        OnAfterEquipmentUpdate.Invoke(this);
+    //}
 
     public bool CanPlaceInSlot(ItemObject _itemObject)
     {

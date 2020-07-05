@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UseItem : MonoBehaviour
 {
-    public virtual void OnEquipItem(GameObject _minimapCanvas)
+    public virtual void OnEquipItem(GameObject _minimapCanvas, InventorySlot _slot)
     {
     }
 
@@ -13,6 +13,10 @@ public class UseItem : MonoBehaviour
     }
 
     public virtual void MainItemUse()
+    {
+    }
+
+    public virtual void ItemFail()
     {
     }
 }

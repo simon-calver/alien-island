@@ -49,6 +49,9 @@ MonoBehaviour:
   itemOn: 1
   onSound: {fileID: 4864310639817431684}
   offSound: {fileID: 4864310639817431684}
+  failSound: {fileID: 4864310639817431684}
+  maxIntensity: 2
+  minIntensity: 0
 --- !u!212 &3945079674408719324
 SpriteRenderer:
   m_ObjectHideFlags: 0

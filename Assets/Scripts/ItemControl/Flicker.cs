@@ -10,10 +10,9 @@ public class Flicker : MonoBehaviour
     public float RateDamping;
     public float Strength;
     public bool _flickering;
-
+    public float _baseIntensity;
 
     private UnityEngine.Experimental.Rendering.Universal.Light2D lightSource;
-    private float _baseIntensity;
     private Vector3 positionNoise;
     private Vector3 lightPosition;
 
@@ -35,7 +34,7 @@ public class Flicker : MonoBehaviour
         }
         _baseIntensity = lightSource.intensity;
         lightPosition = lightSource.transform.localPosition;
-        Debug.Log(lightPosition);
+        //Debug.Log(lightPosition);
         StartCoroutine(DoFlicker());
     }
 

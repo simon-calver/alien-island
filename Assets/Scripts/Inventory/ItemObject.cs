@@ -174,4 +174,8 @@ public class VariableItemStats
         value = Mathf.Clamp(value + valueToAdd, min, max);
     }
 
+    public void RemoveValue(int valueToRemove)
+    {
+        value = Mathf.Clamp(value - valueToRemove, min, max);
+    }
 }

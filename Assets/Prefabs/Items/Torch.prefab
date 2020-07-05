@@ -153,6 +153,9 @@ MonoBehaviour:
   itemOn: 1
   onSound: {fileID: 2409276994682119690}
   offSound: {fileID: 2409276994682119690}
+  failSound: {fileID: 2409276994682119690}
+  maxIntensity: 1
+  minIntensity: 0.2
 --- !u!212 &3945079674408719324
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -215,7 +218,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 36c8e84292cec604fa487ebfe4beb3ff, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -407,3 +410,4 @@ MonoBehaviour:
   RateDamping: 0.1
   Strength: 300
   _flickering: 0
+  _baseIntensity: 0

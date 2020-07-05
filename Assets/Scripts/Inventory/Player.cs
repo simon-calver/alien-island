@@ -34,8 +34,11 @@ public class Player : MonoBehaviour
         }
         for (int i = 0; i < equipment.GetSlots.Length; i++)
         {
+            // The method used to update the inventory slots is added here, thats's what the delegate function in InventoryObject does
             equipment.GetSlots[i].OnBeforeUpdate += OnRemoveItem;
             equipment.GetSlots[i].OnAfterUpdate += OnAddItem;
+            equipment.GetSlots[i].OnBeforeEquipmentUpdate += OnRemoveItemEquipment;
+            equipment.GetSlots[i].OnAfterEquipmentUpdate += OnAddItemEquipment;
         }
 
         // Make sure the inventory is not displayed initially
@@ -56,6 +59,7 @@ public class Player : MonoBehaviour
         this.gameObject.GetComponent<PlayerMovement>().runSpeed = attributes[1].value.ModifiedValue;
     }
 
+    // Updates the inventory display and the player database when item is removed from slot
     public void OnRemoveItem(InventorySlot _slot)
     {
         if (_slot.ItemObject == null)
@@ -76,6 +80,56 @@ public class Player : MonoBehaviour
 
                 // Update any scripts that use the attribute values
                 UpdateMovementSpeed();
+
+                break;
+            case InterfaceType.Chest:
+                break;
+            default:
+                break;
+        }
+
+    }
+
+    public void OnAddItem(InventorySlot _slot)
+    {
+        if (_slot.ItemObject == null)
+            return;
+        switch (_slot.parent.inventory.type)
+        {
+            case InterfaceType.Inventory:
+                break;
+            case InterfaceType.Equipment:
+                for (int i = 0; i < _slot.item.buffs.Length; i++)
+                {
+                    for (int j = 0; j < attributes.Length; j++)
+                    {
+                        if (attributes[j].type == _slot.item.buffs[i].attribute)
+                            attributes[j].value.AddModifier(_slot.item.buffs[i]);
+                    }
+                }
+
+                // Update any scripts that use the attribute values
+                UpdateMovementSpeed();
+
+                break;
+            case InterfaceType.Chest:
+                break;
+            default:
+                break;
+        }
+    }
+
+
+    // Updates the prefab in the player item slot when the item is removed
+    public void OnRemoveItemEquipment(InventorySlot _slot)
+    {
+        if (_slot.ItemObject == null)
+            return;
+        switch (_slot.parent.inventory.type)
+        {
+            case InterfaceType.Inventory:
+                break;
+            case InterfaceType.Equipment:
 
                 // The slot position corresponds to the part of the body this object is attached to
                 Transform body_part_slot = this.transform.GetChild(_slot.slotPosition).Find("Item Slot");
@@ -100,8 +154,8 @@ public class Player : MonoBehaviour
                 break;
         }
 
-    } 
-    public void OnAddItem(InventorySlot _slot)
+    }
+    public void OnAddItemEquipment(InventorySlot _slot)
     {
         if (_slot.ItemObject == null)
             return;
@@ -110,17 +164,6 @@ public class Player : MonoBehaviour
             case InterfaceType.Inventory:
                 break;
             case InterfaceType.Equipment:
-                for (int i = 0; i < _slot.item.buffs.Length; i++)
-                {
-                    for (int j = 0; j < attributes.Length; j++)
-                    {
-                        if (attributes[j].type == _slot.item.buffs[i].attribute)                        
-                            attributes[j].value.AddModifier(_slot.item.buffs[i]);                        
-                    }
-                }
-                
-                // Update any scripts that use the attribute values
-                UpdateMovementSpeed();
 
                 // Check if this item can be dispayed on the player
                 if (_slot.ItemObject.characterDisplay != null)
@@ -151,7 +194,8 @@ public class Player : MonoBehaviour
 
                     // This function takes a gameobject as its argument with most derived classes do not use it,
                     // it seems silly to pass the argument to them all
-                    obj.GetComponentInChildren<UseItem>().OnEquipItem(HUD);
+                    InventorySlot equippedItem = equipment.GetSlots[_slot.slotPosition];
+                    obj.GetComponentInChildren<UseItem>().OnEquipItem(HUD, equippedItem);
                 }
 
                 break;
@@ -165,25 +209,6 @@ public class Player : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
         interactableObject = other.gameObject;
-        // 
-        //var item = other.GetComponent<GroundItem>();
-        //if (item)
-        //{
-        //    // Highlight the item
-        //    Debug.Log(other.transform.position);
-
-
-        //    Item _item = new Item(item.item);
-        //    if(inventory.AddItem(_item, 1))
-        //    {
-        //        Destroy(other.gameObject);
-        //    }
-
-
-
-        //    //inventory.AddItem(new Item(item.item), 1);
-        //    // 
-        //}
     }
 
     void OnTriggerExit2D(Collider2D other)

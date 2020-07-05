@@ -8,33 +8,120 @@ public class UseTorch : SwitchableItem
 
     public AudioSource onSound;
     public AudioSource offSound;
+    public AudioSource failSound;
+
+    public float maxIntensity;
+    public float minIntensity;
 
     private Flicker flicker;
 
+    float delay = 1;
+    float delayedtime;
+
+    private float itemCharge;
+
+    InventorySlot inventorySlot;
+
+    public override void OnEquipItem(GameObject HUD, InventorySlot _slot)
+    {
+        inventorySlot = _slot;
+        light = this.gameObject.transform.GetChild(0).GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
+        itemCharge = inventorySlot.item.variableStats[0].value;
+
+        flicker = light.GetComponent<Flicker>();
+        if (itemCharge >= 10)
+        {
+            if (flicker != null)
+                flicker._baseIntensity = maxIntensity;
+            else
+                light.intensity = maxIntensity;
+        }
+        else if (itemCharge < 10 && itemCharge > 0)
+        {
+            
+            if (flicker != null)
+                flicker._baseIntensity = maxIntensity * itemCharge / 10;
+            else
+                light.intensity = maxIntensity * itemCharge / 10;
+
+        }
+        else
+        {
+            ItemFail();
+        }
+    }
+
     public override void MainItemUse()
     {
-        light = this.gameObject.transform.GetChild(0).GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
-        flicker = light.GetComponent<Flicker>();
-
-        // Turn the light on and off using setActive on the light component
-        if (itemOn)
+        if (itemCharge > 0)
         {
-            offSound.Play();
-            for (int i = 0; i < this.gameObject.transform.childCount; i++)
+            // Turn the light on and off using setActive on the light component
+            if (itemOn)
             {
-                this.gameObject.transform.GetChild(i).gameObject.SetActive(false);
+                offSound.Play();
+                for (int i = 0; i < this.gameObject.transform.childCount; i++)
+                {
+                    this.gameObject.transform.GetChild(i).gameObject.SetActive(false);
+                }
+                itemOn = false;
+                if (flicker != null)
+                    flicker._flickering = false;
             }
-            itemOn = false;
-            flicker._flickering = false;
-        }
-        else if (!itemOn)
-        {
-            onSound.Play();
-            for (int i = 0; i < this.gameObject.transform.childCount; i++)
+            else if (!itemOn)
             {
-                this.gameObject.transform.GetChild(i).gameObject.SetActive(true);
-            }            
-            itemOn = true;
-        }       
+                onSound.Play();
+                for (int i = 0; i < this.gameObject.transform.childCount; i++)
+                {
+                    this.gameObject.transform.GetChild(i).gameObject.SetActive(true);
+                }
+                itemOn = true;
+            }
+        }
+        else
+        {
+            ItemFail();
+        }
+    }
+
+    public override void ItemFail()
+    {
+        itemOn = false;
+        failSound.Play();
+        for (int i = 0; i < this.gameObject.transform.childCount; i++)
+        {
+            this.gameObject.transform.GetChild(i).gameObject.SetActive(false);
+        }
+        itemOn = false;
+        if (flicker != null)
+            flicker._flickering = false;
+    }
+
+    public void Update()
+    {
+        if (Time.time > delayedtime && itemOn)
+        {
+            inventorySlot.item.variableStats[0].RemoveValue(1);
+            itemCharge = inventorySlot.item.variableStats[0].value;
+            if (itemCharge >= 10)
+            {
+                if (flicker != null)
+                    flicker._baseIntensity = maxIntensity;
+                else
+                    light.intensity = maxIntensity;
+            }
+            else if (itemCharge < 10 && itemCharge > 0)
+            {
+                if (flicker != null)
+                    flicker._baseIntensity = maxIntensity * itemCharge / 10;
+                else
+                    light.intensity = maxIntensity * itemCharge / 10;
+            }
+            else
+            {
+                ItemFail();
+            }
+            inventorySlot.UpdateSlot(inventorySlot.item, inventorySlot.amount);
+            delayedtime = Time.time + delay;
+        }
     }
 }

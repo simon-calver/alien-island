@@ -6,7 +6,7 @@ public class UseMap : SwitchableItem
 {
     public GameObject minimapCanvas;
 
-    public override void OnEquipItem(GameObject HUD)
+    public override void OnEquipItem(GameObject HUD, InventorySlot _slot)
     {
         // Get reference to the canvas with the minimap attached and make sure it is active
         minimapCanvas = HUD.transform.Find("Minimap").gameObject;
